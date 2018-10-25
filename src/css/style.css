@@ -6,3 +6,11 @@
 body{
 	background: #FFCC00;
 }
+
+h1{
+	font-size: 48px;
+}
+
+p{
+	font-style: italic;
+}
