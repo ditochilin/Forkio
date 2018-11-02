@@ -39,7 +39,11 @@
 	}
 
 	&__burger-menu{
-		display: none;
+		order : 1;
+		display: flex;
+		flex-shrink: 0;
+		margin-left: auto; 
+//		display: none;
 		cursor: pointer; 
 		color: $primary-color;
 		text-align: center;	
@@ -48,12 +52,10 @@
 }
 
 .menu{	
-	order : 1;
+	// order : 1;
 	display: flex;
-	min-width: 480px;
+	min-width: 320px;
 	align-items: center;
-	flex-shrink: 0;
-	margin-left: auto; 
 	margin-right: 20px; 
 	font-weight: bold;
 
@@ -114,19 +116,18 @@
 		&__logo{
 			order: 1;
 		}
+		&__burger-menu{
+			order: 4;	
+		}
 	}
 
 	.menu{
-		order: 4;
-		margin-left: 120px;
-		margin-top:  40px;
+		margin: 40px  220px 0 0;
 	}
 }
 
 @media screen and (max-width: 768px){
 	.menu{
-		margin: auto;
-		margin-top:  40px;	
 		&__link{
 			padding: 0 5px;
 		}
@@ -154,7 +155,7 @@
 		}
 
 		&__burger-menu{
-			display: block;
+		//	display: block;
 			margin: 0 10px;
 			order: 3
 		}
@@ -163,13 +164,13 @@
 			color: #fff;
 		}
 		
-		&__burger-menu:hover > .menu {
+		&__burger-menu:hover  {
  			 display: flex;
 		}
 	}
 
 	.menu{
-		display: none;
+		
 		flex-direction: column;
 		margin: 0 -20px;
 		width: 100%;
