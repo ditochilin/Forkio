@@ -1,0 +1,46 @@
+@import 'vars.scss';
+
+.about-us{
+
+	text-align: center;
+
+	.container{
+		display: flex;
+		justify-content: center;
+		background: url('../../img/bg-img-header.png') no-repeat center;
+		font-family: Montserrat;
+	}
+
+	&__content{
+	}
+
+	&__title{
+		font-size: 76px;
+		font-weight: bold;
+		color: #fff;
+		padding: 45px 0 0 0;
+	}
+
+	&__slogan{
+		color: $primary-color;
+		font-family: 'Lato', sans-serif;
+		font-size: 30px;
+		padding: 18px 0 0 0;
+	}
+
+	&__small{
+		&-info{
+			padding: 18px 0 453px 0;
+			color: $small-text-color;
+			font-size: 16;
+		}
+	}
+
+}
+
+.b-download-btn{
+	color: $small-text-color;
+	padding-top: 50px;
+	margin-bottom: -50px;
+}
+

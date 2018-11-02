@@ -1,0 +1,28 @@
+.about-us {
+  text-align: center; }
+  .about-us .container {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background: url("../../img/bg-img-header.png") no-repeat center;
+    font-family: Montserrat; }
+  .about-us__title {
+    font-size: 76px;
+    font-weight: bold;
+    color: #fff;
+    padding: 45px 0 0 0; }
+  .about-us__slogan {
+    color: #8d81ac;
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    padding: 18px 0 0 0; }
+  .about-us__small-info {
+    padding: 18px 0 453px 0;
+    color: #848e97;
+    font-size: 16; }
+
+.b-download-btn {
+  color: #848e97;
+  padding-top: 50px;
+  margin-bottom: -50px; }
