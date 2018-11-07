@@ -3,6 +3,7 @@
 .about-us{
 
 	text-align: center;
+	
 
 	.container{
 		display: flex;
@@ -12,6 +13,7 @@
 	}
 
 	&__content{
+
 	}
 
 	&__title{
@@ -32,7 +34,7 @@
 		&-info{
 			padding: 18px 0 453px 0;
 			color: $small-text-color;
-			font-size: 16;
+			font-size: 16px;
 		}
 	}
 
@@ -44,3 +46,19 @@
 	margin-bottom: -50px;
 }
 
+@media screen and ( max-width: 480px){
+	.about-us{
+		&__title{
+			font-size: 48px;
+		}
+
+		&__slogan{
+			font-size: 18px;
+		}
+		&__small{
+			&-info{
+				font-size: 14px;
+			}
+		}
+	}
+}
