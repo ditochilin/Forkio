@@ -26,9 +26,10 @@
 .b-download-btn {
   color: #848e97;
   padding-top: 50px;
-  margin-bottom: -50px; }
+  margin-bottom: -60px; }
   .b-download-btn__info {
-    padding-top: 13px; }
+    padding-top: 13px;
+    color: #848e97; }
 
 @media screen and (max-width: 480px) {
   .about-us__title {

@@ -1,0 +1,85 @@
+
+
+.revolutionary-editor{
+
+	padding: 0 10px;
+	font-family: Montserrat;
+
+	&__container{
+		//box-siding: border-box;
+		margin-top: 50px; 
+		padding: 70px 0;
+	}
+
+	&__content{
+		text-align: center;
+		position: relative;
+	}
+
+	&__blocks{ 
+		position: absolute;
+		display: inline-block;
+		left: 50%; 
+		transform: translateX(-50%);
+
+		&-block{
+			float: left;
+		}
+	}
+
+	&__title{
+		text-transform: uppercase;
+		font-weight: 600;
+		font-size: 54px;
+		color: #635c73;
+	}
+
+	&__slogan{
+		margin: 35px 0;
+		font-family: 'Lato', sans-serif;
+		font-weight: 400;
+		font-size: 21px;
+		color: #323232;
+	}
+
+	&-btn{	
+		color: #24292e;
+		float: left;
+		font-size: 11px;
+		list-style-type: none;
+		margin: 0 10px 0 0;
+		padding: 0 5px 0 5px;
+	
+	}
+
+	&-btn>svg{
+		width: 15px;
+		height: 15px;	
+		padding-top: 5px;
+	}
+
+	&-info{
+		width: 60px;
+	}
+}
+
+.btn-sm{
+	display: block;
+	float: right;
+	margin: 6px; 
+	font-weight: 700;
+	font-size: 12px;
+	
+}
+
+@media screen and(max-width: 480px){
+	.revolutionary-editor{
+		&__title{
+			font-size: 26px;
+		}
+
+		&__slogan{
+			font-size: 14px;
+		}
+	}
+}

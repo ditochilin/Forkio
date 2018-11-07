@@ -12,10 +12,6 @@
 		font-family: Montserrat;
 	}
 
-	&__content{
-
-	}
-
 	&__title{
 		font-size: 76px;
 		font-weight: bold;
@@ -44,9 +40,10 @@
 .b-download-btn{
 	color: $small-text-color;
 	padding-top: 50px;
-	margin-bottom: -50px;
+	margin-bottom: -60px;
 	&__info{
 		padding-top: 13px;
+		color: #848e97;
 	}
 }
 

@@ -1,0 +1,55 @@
+.revolutionary-editor {
+  padding: 0 10px;
+  font-family: Montserrat; }
+  .revolutionary-editor__container {
+    margin-top: 50px;
+    padding: 70px 0; }
+  .revolutionary-editor__content {
+    text-align: center;
+    position: relative; }
+  .revolutionary-editor__blocks {
+    position: absolute;
+    display: inline-block;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); }
+    .revolutionary-editor__blocks-block {
+      float: left; }
+  .revolutionary-editor__title {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 54px;
+    color: #635c73; }
+  .revolutionary-editor__slogan {
+    margin: 35px 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 21px;
+    color: #323232; }
+  .revolutionary-editor-btn {
+    color: #24292e;
+    float: left;
+    font-size: 11px;
+    list-style-type: none;
+    margin: 0 10px 0 0;
+    padding: 0 5px 0 5px; }
+  .revolutionary-editor-btn > svg {
+    width: 15px;
+    height: 15px;
+    padding-top: 5px; }
+  .revolutionary-editor-info {
+    width: 60px; }
+
+.btn-sm {
+  display: block;
+  float: right;
+  margin: 6px;
+  font-weight: 700;
+  font-size: 12px; }
+
+@media screen and (max-width: 480px) {
+  .revolutionary-editor__title {
+    font-size: 26px; }
+  .revolutionary-editor__slogan {
+    font-size: 14px; } }
