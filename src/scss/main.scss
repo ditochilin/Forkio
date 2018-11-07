@@ -5,6 +5,17 @@
 	padding: 0;
 }
 
+.container{
+	max-width: 1200px;
+	min-width: 320px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+// .container{
+// 	padding: 0 10px;
+// }
+
 .btn{
 	display: block;
 	font-family: Montserrat;
@@ -30,6 +41,15 @@
 			border-radius: 31px;
 	}
 }
+
+@media screen and ( max-width: 480px){
+	.btn{
+		&_download{
+			width: 290px;
+		}
+	}	
+}
+	
 
 .header__btn{
 	width: 145px;
