@@ -2,11 +2,11 @@
   margin: 0;
   padding: 0; }
 
-.container {
+.main-container {
   max-width: 1200px;
   min-width: 320px;
   margin: 0 auto;
-  padding: 0 10px; }
+  padding: 0 -10px; }
 
 .btn {
   display: block;

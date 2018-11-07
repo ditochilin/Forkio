@@ -1,29 +1,27 @@
 
 
 .revolutionary-editor{
-
-	padding: 0 10px;
 	font-family: Montserrat;
+	padding: 0 10px;	
 
 	&__container{
-		//box-siding: border-box;
 		margin-top: 50px; 
 		padding: 70px 0;
 	}
 
 	&__content{
 		text-align: center;
-		position: relative;
 	}
 
 	&__blocks{ 
-		position: absolute;
-		display: inline-block;
-		left: 50%; 
-		transform: translateX(-50%);
-
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		width: 100%;
+		
 		&-block{
 			float: left;
+			margin: 20px 10px;
 		}
 	}
 
@@ -47,29 +45,33 @@
 		float: left;
 		font-size: 11px;
 		list-style-type: none;
-		margin: 0 10px 0 0;
-		padding: 0 5px 0 5px;
-	
+		padding: 0 15px 0 15px;
+		
 	}
 
 	&-btn>svg{
 		width: 15px;
 		height: 15px;	
-		padding-top: 5px;
 	}
 
 	&-info{
+		border: 1px solid #bbb;
+		border-left: none; 
+		text-align: center;
 		width: 60px;
+		height: 20px;
+		font-weight: 700;
+		font-size: 12px;
 	}
 }
 
-.btn-sm{
+.btn-label{
 	display: block;
 	float: right;
-	margin: 6px; 
+	margin: 2px;
+	margin-left: 10px; 
 	font-weight: 700;
 	font-size: 12px;
-	
 }
 
 @media screen and(max-width: 480px){
@@ -80,6 +82,17 @@
 
 		&__slogan{
 			font-size: 14px;
+		}
+
+		&-info{
+			width: 40px;
+		}
+			&-btn{	
+		color: #24292e;
+		float: left;
+		font-size: 11px;
+		list-style-type: none;
+		padding: 0 5px 0 5px;
 		}
 	}
 }
