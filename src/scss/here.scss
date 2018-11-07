@@ -1,0 +1,75 @@
+@import 'vars.scss';
+
+.here{
+	background-color: #f4f4f4;
+	&-content{
+		font-family: Montserrat;
+	}
+
+	.wrapper{
+		display: flex;
+		flex-wrap: nowrap;
+		flex-basis: 60%;
+				
+		&__title{
+			display: block;
+			margin-left: 25px;
+			font-size: 48px;
+			color: $primary-color;
+			font-weight: 700;
+		}
+
+		&__img{	
+			background-repeat: no-repeat;
+			background-image: url("/img/editor_.png");
+			min-height: 381px;
+			min-width: 715px; 
+			max-width: 975px;
+			height: 520px;
+		}	
+	}
+}
+
+
+.topics{
+	display: flex;
+	flex-wrap: wrap;
+
+	&__topic{
+		margin-top: 35px;
+		display: flex;
+		
+		color: #323232;
+		&-title{			
+			font-size: 16px;
+			color: #323232;	
+		}	
+		&-content{			
+			font-size: 14px;	
+			color: #848e97;
+		}		
+		&-img > div{
+			min-width: 111px;
+			min-height: 90px;
+			background-repeat: no-repeat;
+			background-size: contain;								
+			background-position: center;		}		
+					
+	}
+}
+
+.topic1-img{
+	background-image: url("/img/topic1.png");
+}
+
+.topic2-img{
+	background-image: url("/img/topic2.png");
+}
+
+.topic3-img{
+	background-image: url("/img/topic3.png");
+}
+
+.topic4-img{
+	background-image: url("/img/topic4.png");
+}

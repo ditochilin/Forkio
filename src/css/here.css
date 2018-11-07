@@ -1,0 +1,56 @@
+.here {
+  background-color: #f4f4f4; }
+  .here-content {
+    font-family: Montserrat; }
+  .here .wrapper {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-basis: 60%; }
+    .here .wrapper__title {
+      display: block;
+      margin-left: 25px;
+      font-size: 48px;
+      color: #8d81ac;
+      font-weight: 700; }
+    .here .wrapper__img {
+      background-repeat: no-repeat;
+      background-image: url("/img/editor_.png");
+      min-height: 381px;
+      min-width: 715px;
+      max-width: 975px;
+      height: 520px; }
+
+.topics {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap; }
+  .topics__topic {
+    margin-top: 35px;
+    display: -webkit-box;
+    display: flex;
+    color: #323232; }
+    .topics__topic-title {
+      font-size: 16px;
+      color: #323232; }
+    .topics__topic-content {
+      font-size: 14px;
+      color: #848e97; }
+    .topics__topic-img > div {
+      min-width: 111px;
+      min-height: 90px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center; }
+
+.topic1-img {
+  background-image: url("/img/topic1.png"); }
+
+.topic2-img {
+  background-image: url("/img/topic2.png"); }
+
+.topic3-img {
+  background-image: url("/img/topic3.png"); }
+
+.topic4-img {
+  background-image: url("/img/topic4.png"); }
