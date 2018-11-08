@@ -1,0 +1,179 @@
+@import 'vars.scss';
+
+.steven{
+	padding: 0 10px;
+	
+	&-content{		
+		padding-top: 60px;
+		font-family: Montserrat;	
+	}
+
+}
+
+.slick {
+		display: flex;
+		justify-content: center;	
+	
+	&__item {
+		display: flex;
+		flex-direction: column;
+
+		&-recipient {
+			display: flex;
+			align-self: center;
+		}
+
+		&-message {
+			align-self: center;
+			max-width: 734px;
+			font-family: 'Lato', sans-serif; 
+			font-size: 20px;
+			font-weight: 400;
+			margin: 35px 0 27px 0; 
+			& > p {
+				display: inline;
+				//text-align: center;
+				color: #333333;
+			}
+		}
+		&-age {
+			align-self: center;
+			color: $small-text-color;
+		}	
+	}
+
+}
+
+a{
+	text-decoration: none;
+}
+
+.recipient{
+	display: flex;
+
+	&-info{
+		margin: 0 20px;
+
+		&>div{				
+			transform: translateY(35%);
+		}
+
+		& p a{
+			display: block;				
+		}
+
+
+	}
+
+	&-img> div{
+		display: block;
+		width: 86px;
+		height: 86px;
+		border-radius: 43px;
+		background-repeat: no-repeat;
+		background-size: 180%; 
+		background-position: center;		
+	}
+
+	&1-img{
+		background-image: url("/img/usirpic.png");
+	}
+
+
+	&-title{
+		font-size: 24px;
+		font-weight: 800;
+		color: #635c73;
+	}
+	&-contact{
+		font-size: 16px;
+		color: $primary-color;
+	}
+	
+}
+
+
+.media{
+	margin-top: 80px; 
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+
+	&__block{
+		margin: 35px 20px 0 20px;
+		display: flex;
+		flex-direction: column;
+		
+		&:nth-child(1) > button{
+			border: 1px solid #2b414d;
+			background-color: #f3f3f3;
+		}
+
+		&:nth-child(2) > button{
+			color: #fff;
+			background-color: #26a6d1;
+		}
+
+		&:nth-child(3) > button{
+			color: #fff;
+			background-color: #3b5998;
+		}
+
+		&:nth-child(1) > button:hover{
+			background-color: #2b414d;
+			color: #f3f3f3;
+			border: 1px solid #2b414d;
+		}
+
+		&:nth-child(2) > button:hover{
+			background-color: #fff;
+			color: #26a6d1;
+			border: 1px solid #26a6d1;
+		}
+
+		&:nth-child(3) > button:hover{
+			background-color: #fff;
+			color: #3b5998;
+			border: 1px solid #3b5998;
+		}
+
+		&-btn{
+			display: block;
+			border-radius: 5px; 
+			border: none;
+			font-size: 21px;
+			width: 240px;
+			height: 50px;
+
+			&> i {
+				display: block;
+				float: left;
+				margin: 15px 0 15px 25px; 
+			}
+			& > span {
+				display: block;
+				margin: 15px 60px 15px 0;
+			}
+
+		}
+
+		&-btn:hover{
+			cursor: pointer;
+		}
+
+		&-info{
+			margin-top: 18px;
+			align-self: center;
+			font-size: 14px;
+			color: $small-text-color;
+		}
+	}
+}
+
+// .btn{
+// 	&__label{
+// 		&-git{
+// 			background-color: #f3f3f3;
+// 		}
+// 	}
+// }
