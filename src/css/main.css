@@ -37,3 +37,7 @@
   border-radius: 19px;
   -webkit-box-ordinal-group: 3;
   order: 2; }
+
+.title__message {
+  font-size: 48px;
+  font-weight: 600; }
