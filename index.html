@@ -6,10 +6,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" type="text/css" href="dist\css\style.css">
+	
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- slick -->
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	<link rel="stylesheet" type="text/css" href="dist\css\style.css">
 </head>
 <body>
 	<div class="main-container">
@@ -161,32 +165,77 @@
 		</section>
 
 		<section class="steven">
-			<div class="steven-content">
-				<div class="slick">
-					<div class="slick__item">
-						<div class="slick__item-recipient">
-							<div class="recipient-img">
-								<div class="recipient1-img"></div>
-							</div>
-							<div class="recipient-info">
-								<div class="recipient-content">
-									<p class="recipient-title">Steven Strange</p>							
-									<a href="#" class="recipient-contact">@DoctorS 
-									</a>
+			<div class="steven__content">
+				<div class="steven__content-slick">	
+					<div class="slick">
+						<div class="slick__item">
+							<div class="slick__item-recipient">
+								<div class="recipient-img">
+									<div class="recipient1-img"></div>
+								</div>
+								<div class="recipient-info">
+									<div class="recipient-content">
+										<p class="recipient-title">Steven Strange</p>							
+										<a href="#" class="recipient-contact">@DoctorS 
+										</a>
+									</div>
 								</div>
 							</div>
-						</div>
 
-						<div class="slick__item-message">
-							<a  href="#" class="message__sender">@Pixelbuddha</a>
-							<p class="message__content">
-								 Suspendisse sodales sem est, in scelerisque felis scelerisque in. Aenean faucibus mollis risus. Praesent sit amet erat eget eros. 
-							</p>
+							<div class="slick__item-message">
+								<a  href="#" class="message__sender">@Pixelbuddha</a>
+								<p class="message__content">
+									Suspendisse sodales sem est, in scelerisque felis scelerisque in. Aenean faucibus mollis risus. Praesent sit amet erat eget eros. 
+								</p>
+							</div>
+							<div class="slick__item-age">2 hours ago</div>
 						</div>
-						<div class="slick__item-age">2 hours ago</div>
-					</div>
+						<div class="slick__item">
+							<div class="slick__item-recipient">
+								<div class="recipient-img">
+									<div class="recipient1-img"></div>
+								</div>
+								<div class="recipient-info">
+									<div class="recipient-content">
+										<p class="recipient-title">Alex</p>							
+										<a href="#" class="recipient-contact">@Alex 
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="slick__item-message">
+								<a  href="#" class="message__sender">@Pixelbuddha</a>
+								<p class="message__content">
+									Suspendisse sodales sem est, in scelerisque felis scelerisque in.22222
+								</p>
+							</div>
+							<div class="slick__item-age">22 hours ago</div>
+						</div>
+						<div class="slick__item">
+							<div class="slick__item-recipient">
+								<div class="recipient-img">
+									<div class="recipient1-img"></div>
+								</div>
+								<div class="recipient-info">
+									<div class="recipient-content">
+										<p class="recipient-title">Jhon Simpson</p>							
+										<a href="#" class="recipient-contact">@DoctorS 
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="slick__item-message">
+								<a  href="#" class="message__sender">@Pixelbuddha</a>
+								<p class="message__content">
+									Suspendisse sodales sem est, in scelerisque felis scelerisque in.33333
+								</p>
+							</div>
+							<div class="slick__item-age">33 hours ago</div>
+						</div>
+					</div>	
 				</div>
-
 				<div class="media">
 					<div class="media__block">
 						<button class="media__block-btn">
@@ -211,8 +260,59 @@
 				</div>
 			</div>
 		</section>
+
+		<section class="people">
+		 			<div class="people__content">
+		 				<div class="people__content-title">
+		 					<p class="title__message">
+		 						People Are Talking About Fork
+		 					</p>
+		 				</div>
+		 				<div class="people__content-grid">
+		 					<div class="grid">
+		 						<div class="grid__item">
+		 							<!-- <div class="grid__item-logo"></div> -->
+		 							<img class="grid__item-logo" src="img/People/logo1.svg" alt="logo 1">
+		 							<div class="grid__item-message">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis.</div>
+		 						</div>
+		 						<div class="grid__item">
+		 							<!-- <div class="grid__item-logo"></div> -->
+		 							<img class="grid__item-logo" src="img/People/logo2.svg" alt="logo 2">
+		 							<div class="grid__item-message">Donec euismod dolor ut ultricies consequat. Vivamus urna ipsum, rhoncus molestie neque ac, mollis eleifend nibh.</div>
+		 						</div>
+		 						<div class="grid__item">
+		 							<!-- <div class="grid__item-logo"></div> -->
+		 							<img class="grid__item-logo" src="img/People/logo3.svg" alt="logo 3">
+		 							<div class="grid__item-message">In efficitur in velit et tempus. Duis nec odio dapibus, suscipit erat fringilla, imperdiet nibh. Morbi tempus auctor felis ac vehicula.</div>
+		 						</div>
+		 						<div class="grid__item">
+		 							<!-- <div class="grid__item-logo"></div> -->
+		 							<img class="grid__item-logo" src="img/People/logo4.svg" alt="logo 4">
+		 							<div class="grid__item-message">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis.</div>
+		 						</div>
+		 						<div class="grid__item">
+		 							<!-- <div class="grid__item-logo"></div> -->
+		 							<img class="grid__item-logo" src="img/People/logo5.svg" alt="logo 5">
+		 							<div class="grid__item-message">Praesent ut eros tristique, malesuada lectus vel, lobortis massa. Nulla faucibus lorem id arcu consequat faucibus.</div>
+		 						</div>
+		 						<div class="grid__item">
+		 							<img class="grid__item-logo" src="img/People/logo6.svg" alt="logo 6">
+		 							<div class="grid__item-message">Fusce pharetra erat id odio blandit, nec pharetra eros venenatis. Pellentesque porttitor cursus massa et vestibulum.</div>
+		 						</div>
+		 					</div>
+		 				</div>
+		 				<div class="people__content-footer">
+		 					<p class="footer__message">
+		 						Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris, facilisis vitae aliquet id, imperdiet quis nibh. Donec eget elit eu libero tincidunt consequat nec elementum orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+		 					</p>
+		 				</div>
+		 			</div>
+		 		</section> 		
 	</div>
 
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
 	<script src="dist/js/script.js"></script>
 </body>
 </html>

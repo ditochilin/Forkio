@@ -3,29 +3,30 @@
 .steven{
 	padding: 0 10px;
 	
-	&-content{		
+	&__content{		
 		padding-top: 60px;
 		font-family: Montserrat;	
+		//position: relative;
+		
+		//	background-color: #aaa;
+		&-slick{
+			margin: 0 auto;
+			max-width: 700px;
+		}
 	}
-
 }
 
-.slick {
-		display: flex;
-		justify-content: center;	
-	
-	&__item {
-		display: flex;
-		flex-direction: column;
 
+.slick {
+		padding: 0 25px;
+
+	&__item {
+		
 		&-recipient {
-			display: flex;
-			align-self: center;
+			display: flex;			
 		}
 
 		&-message {
-			align-self: center;
-			max-width: 734px;
 			font-family: 'Lato', sans-serif; 
 			font-size: 20px;
 			font-weight: 400;
@@ -41,8 +42,36 @@
 			color: $small-text-color;
 		}	
 	}
+	
+	&-prev -next{
+		z-index: 1001;	
+	}
+
+	&-prev:before {
+		font-size: 35px;
+		color: #a3a3a3;
+		opacity: 1;	
+		content:"\2039";
+	}	
+
+	&-next:before {
+		font-size: 35px;
+		color: #a3a3a3;
+		opacity: 1;	
+		content:"\203A";
+	}	
+
+	&-prev {
+		left: 0;
+	}
+
+	&-next{
+		right: 0;
+	}
 
 }
+
+
 
 a{
 	text-decoration: none;
@@ -170,10 +199,24 @@ a{
 	}
 }
 
-// .btn{
-// 	&__label{
-// 		&-git{
-// 			background-color: #f3f3f3;
-// 		}
-// 	}
-// }
+@media screen and (max-width: 993px){
+	.steven{
+
+		&-slick{
+			max-width: 600px;
+		}
+		
+	}
+	.slick {
+
+	&__item {
+		
+		&-message {
+			max-width: 550px;
+		}
+	}
+	}		
+	.media{
+		margin-top: 0;
+	}
+}

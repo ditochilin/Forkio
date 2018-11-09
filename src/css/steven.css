@@ -1,37 +1,44 @@
 .steven {
   padding: 0 10px; }
-  .steven-content {
+  .steven__content {
     padding-top: 60px;
     font-family: Montserrat; }
+    .steven__content-slick {
+      margin: 0 auto;
+      max-width: 700px; }
 
 .slick {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: center;
-  justify-content: center; }
-  .slick__item {
+  padding: 0 25px; }
+  .slick__item-recipient {
     display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column; }
-    .slick__item-recipient {
-      display: -webkit-box;
-      display: flex;
-      align-self: center; }
-    .slick__item-message {
-      align-self: center;
-      max-width: 734px;
-      font-family: 'Lato', sans-serif;
-      font-size: 20px;
-      font-weight: 400;
-      margin: 35px 0 27px 0; }
-      .slick__item-message > p {
-        display: inline;
-        color: #333333; }
-    .slick__item-age {
-      align-self: center;
-      color: #848e97; }
+    display: flex; }
+  .slick__item-message {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 35px 0 27px 0; }
+    .slick__item-message > p {
+      display: inline;
+      color: #333333; }
+  .slick__item-age {
+    align-self: center;
+    color: #848e97; }
+  .slick-prev -next {
+    z-index: 1001; }
+  .slick-prev:before {
+    font-size: 35px;
+    color: #a3a3a3;
+    opacity: 1;
+    content: "\2039"; }
+  .slick-next:before {
+    font-size: 35px;
+    color: #a3a3a3;
+    opacity: 1;
+    content: "\203A"; }
+  .slick-prev {
+    left: 0; }
+  .slick-next {
+    right: 0; }
 
 a {
   text-decoration: none; }
@@ -121,3 +128,11 @@ a {
       align-self: center;
       font-size: 14px;
       color: #848e97; }
+
+@media screen and (max-width: 993px) {
+  .steven-slick {
+    max-width: 600px; }
+  .slick__item-message {
+    max-width: 550px; }
+  .media {
+    margin-top: 0; } }
