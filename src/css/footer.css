@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.main-container {
+  max-width: 1200px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 -10px; }
+
+.btn {
+  display: block;
+  font-family: Montserrat;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold; }
+  .btn_violet {
+    background-color: #8d81ac;
+    border: 2px solid #8d81ac; }
+  .btn_violet:hover {
+    color: #8d81ac;
+    background: #fff; }
+  .btn_download {
+    margin: 0 auto;
+    width: 390px;
+    padding: 20px;
+    border-radius: 31px; }
+
+@media screen and (max-width: 480px) {
+  .btn_download {
+    width: 290px; } }
+
+.header__btn {
+  width: 145px;
+  padding: 10px;
+  flex-shrink: 0;
+  border-radius: 19px;
+  -webkit-box-ordinal-group: 3;
+  order: 2; }
+
+.footer__content {
+  font-family: Montserrat; }
+
+.footergrid__header {
+  display: grid;
+  grid-template-areas: "title username phone callme";
+  padding: 0 90px;
+  background-color: #f4f4f4; }
+  .footergrid__header > * {
+    align-self: center; }
+  .footergrid__header-title {
+    grid-area: title;
+    color: #635c73;
+    font-size: 30px;
+    font-weight: 700; }
+  .footergrid__header > input {
+    max-width: 336px;
+    height: 44px;
+    border-radius: 22px;
+    border: none;
+    background-color: #fff;
+    margin: 45px 10px;
+    padding-left: 25px; }
+  .footergrid__header > input::-webkit-input-placeholder {
+    font-size: 14px;
+    color: #c8cbcf; }
+  .footergrid__header > input:-ms-input-placeholder {
+    font-size: 14px;
+    color: #c8cbcf; }
+  .footergrid__header > input::-ms-input-placeholder {
+    font-size: 14px;
+    color: #c8cbcf; }
+  .footergrid__header > input::placeholder {
+    font-size: 14px;
+    color: #c8cbcf; }
+  .footergrid__header-username {
+    grid-area: username; }
+  .footergrid__header-phone {
+    grid-area: phone; }
+  .footergrid__header-email {
+    display: none;
+    grid-area: email; }
+  .footergrid__header-callme {
+    grid-area: callme;
+    width: 140px;
+    height: 44px;
+    margin: 0 10px;
+    font-size: 13px;
+    color: #fff;
+    border-radius: 22px;
+    text-transform: uppercase; }
+  .footergrid__header-callme:hover {
+    cursor: pointer; }
+
+@media screen and (max-width: 993px) {
+  .footergrid__header {
+    padding: 0 30px;
+    grid-template-areas: "title title" "username phone" "callme callme"; }
+    .footergrid__header-title, .footergrid__header-callme {
+      justify-self: center; }
+    .footergrid__header > input {
+      margin: 28px 17px 25px 17px; }
+    .footergrid__header-title {
+      margin-top: 26px; }
+    .footergrid__header-callme {
+      margin-bottom: 30px; } }

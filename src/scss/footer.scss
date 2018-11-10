@@ -1,0 +1,121 @@
+@import 'main.scss';
+
+.footer {
+
+	&__content {
+		font-family: Montserrat;
+	}
+}
+
+.footergrid {
+
+	&__header {
+		display: grid;
+//		justify-content: center;
+		grid-template-areas: 
+    		"title username phone callme";	
+
+		padding: 0 90px;
+		background-color: #f4f4f4;
+		
+		& > * {
+			align-self: center;
+		}	
+
+		&-title {
+			grid-area: title;
+			color: #635c73;
+			font-size: 30px;	
+			font-weight: 700;
+			
+		}
+
+		&>input {
+			max-width: 336px;
+			height: 44px;
+			border-radius: 22px;
+			border: none;
+			background-color: #fff;
+			margin: 45px 10px; 
+			padding-left: 25px;
+		}
+
+		&>input::placeholder {
+			font-size: 14px;
+			color: #c8cbcf;
+		}	
+
+		&-username {
+			grid-area: username;
+		}
+
+		&-phone {
+			grid-area: phone;
+		}
+
+		&-email {
+			display: none;
+			grid-area: email;
+		}
+
+		&-callme{
+			grid-area: callme;
+			width: 140px;
+			height: 44px;
+			margin: 0 10px; 
+			font-size: 13px;
+			color: #fff;
+			border-radius: 22px;
+			text-transform: uppercase;
+		}
+
+		&-callme:hover {
+			cursor: pointer;
+		}
+	}
+
+	&__forkio {
+
+	}
+	
+	&__nav {
+
+	}
+
+	&__contacts {
+
+	}
+
+	&__info {
+
+	}
+}
+
+
+@media screen and (max-width: 993px){
+	.footergrid{
+		&__header{		
+			padding: 0 30px;	
+			grid-template-areas: 
+			"title title"
+			"username phone"
+			"callme callme";	
+
+			&-title, &-callme {
+				justify-self: center;
+			}	
+
+			& > input {
+				margin: 28px 17px 25px 17px;
+			}
+
+			&-title{
+				margin-top: 26px;
+			}
+
+			&-callme{
+				margin-bottom: 30px;
+			}
+		}
+	}
+}

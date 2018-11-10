@@ -15,11 +15,11 @@
 
 .gridf {
   display: grid;
-  grid-column-gap: 30px;
+  grid-column-gap: 11px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr; }
   .gridf__item_highlight {
-    width: 300px !important;
+    max-width: 300px !important;
     height: 560px !important;
     margin-top: -15%;
     background: rgba(0, 0, 0, 0.1) !important; }
@@ -34,7 +34,7 @@
       .gridf__item_highlight-purchase:hover {
         background: rgba(255, 255, 255, 0.7) !important; }
   .gridf__item {
-    width: 260px;
+    max-width: 260px;
     height: 460px;
     background: rgba(255, 255, 255, 0.1);
     position: relative; }
@@ -102,4 +102,5 @@
     grid-template-columns: 1fr;
     grid-row-gap: 50px; }
     .gridf__item {
-      justify-self: center; } }
+      justify-self: center;
+      width: 260px; } }
