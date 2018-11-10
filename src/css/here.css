@@ -22,7 +22,6 @@
       margin-top: 50px;
       background-repeat: no-repeat;
       background-image: url("/img/editor_.png");
-      min-height: 381px;
       min-width: 715px;
       max-width: 975px;
       height: 520px; }
@@ -77,11 +76,6 @@
       justify-content: center;
       font-size: 42px;
       text-align: center; } }
-
-@media screen and (max-width: 768px) {
-  .here .wrapper__img {
-    min-height: 381px;
-    min-width: 515px; } }
 
 @media screen and (max-width: 480px) {
   .topics__topic {
