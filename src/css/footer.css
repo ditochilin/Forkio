@@ -98,7 +98,8 @@
   padding: 60px 35px; }
 
 .footergrid__forkio {
-  grid-area: forkio; }
+  grid-area: forkio;
+  margin-bottom: 35px; }
   .footergrid__forkio-logo {
     float: left;
     background-size: 100%;
@@ -126,7 +127,8 @@
 
 .footergrid__nav {
   grid-area: nav;
-  margin-left: 86px; }
+  margin-left: 86px;
+  margin-bottom: 43px; }
   .footergrid__nav-title {
     color: #323232;
     font-weight: 500;
@@ -161,7 +163,8 @@
 .phone-num {
   color: #3f3f3f;
   font-weight: 800;
-  font-size: 30px; }
+  font-size: 30px;
+  margin-bottom: 15px; }
 
 .phone-rem {
   color: #848e97;
@@ -193,7 +196,12 @@
     .footergrid__header-title {
       margin-top: 26px; }
     .footergrid__header-callme {
-      margin-bottom: 30px; } }
+      margin-bottom: 30px; }
+  .footergrid__white-container {
+    grid-template-areas: "forkio nav" "contacts info";
+    padding: 22px 35px; }
+  .footergrid__contacts {
+    margin-left: 0px; } }
 
 @media screen and (max-width: 600px) {
   .footergrid__header > input {
@@ -210,6 +218,15 @@
       margin: 10px; }
     .footergrid__header-callme {
       margin-top: 20px; }
+  .footergrid__white-container {
+    grid-template-areas: "forkio" "nav" "contacts" "info"; }
+  .footergrid__nav {
+    margin-left: 0px; }
+  .footergrid__info {
+    margin-left: 0px;
+    margin-top: 39px; }
+    .footergrid__info-header {
+      padding-left: 0px; }
   .t2 {
     display: block; }
   .t1 {

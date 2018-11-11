@@ -84,6 +84,7 @@
 	&__forkio {
 
 		grid-area: forkio;
+		margin-bottom: 35px;
 
 		&-logo{
 			float: left;
@@ -128,6 +129,7 @@
 	&__nav {
 		grid-area: nav;
 		margin-left: 86px;
+		margin-bottom: 43px; 
 		&-title{
 			color: $text-color-grey;
 			font-weight: 500;			
@@ -178,6 +180,7 @@
 		color: #3f3f3f;
 		font-weight: 800;
 		font-size: 30px;
+		margin-bottom: 15px; 
 	}
 
 	&-rem{
@@ -230,6 +233,18 @@
 				margin-bottom: 30px;
 			}
 		}
+
+		&__white-container{
+			grid-template-areas: 
+    			"forkio nav"
+    			"contacts info";
+
+    		padding: 22px 35px;	
+		}
+
+		&__contacts {
+			margin-left: 0px;
+		}
 	}
 }
 
@@ -266,6 +281,26 @@
 
 			&-callme{
 				margin-top: 20px;
+			}
+		}
+
+		&__white-container{
+			grid-template-areas: 
+    			"forkio"
+    			"nav"
+    			"contacts"
+    			"info";
+    	}
+
+    	&__nav {
+			margin-left: 0px;
+		}
+
+    	&__info {
+			margin-left: 0px;
+			margin-top: 39px; 
+			&-header{
+				padding-left: 0px;
 			}
 		}
 	}	
