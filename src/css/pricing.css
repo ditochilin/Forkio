@@ -104,3 +104,11 @@
     .gridf__item {
       justify-self: center;
       width: 260px; } }
+
+@media screen and (max-width: 400px) {
+  .pricing__content-title {
+    font-size: 28px; }
+  .gridf {
+    grid-column-gap: 0; }
+    .gridf__item_highlight {
+      width: 288px !important; } }

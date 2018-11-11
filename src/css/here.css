@@ -85,3 +85,7 @@
     flex-direction: column; }
     .topics__topic-item {
       margin-top: 20px; } }
+
+@media screen and (max-width: 400px) {
+  .here .wrapper__title {
+    font-size: 32px; } }

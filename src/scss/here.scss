@@ -127,3 +127,13 @@
 		}
 	}	
 }
+
+@media screen and (max-width: 400px){
+	.here{
+		.wrapper{
+			&__title{
+				font-size: 32px;
+			}
+		}
+	}	
+}
