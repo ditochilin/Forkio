@@ -24,7 +24,7 @@
 
 		&-title {
 			grid-area: title;
-			color: #635c73;
+			color: $text-color-header;
 			font-size: 30px;	
 			font-weight: 700;
 		}
@@ -84,7 +84,6 @@
 	&__forkio {
 
 		grid-area: forkio;
-		//align-self: start;
 
 		&-logo{
 			float: left;
@@ -92,39 +91,110 @@
 			height: 42px;
 			width: 45px;		
 			background-image: url('../../img/Logo.svg');
-			&:hover{
-				background-image: url('../../img/logo-black.png');
-			}		
+				
 		}
 
 		&> a {
 			display: block;
 			text-transform: uppercase;
 			line-height: 45px;
-			text-align: center;
 			font-weight: 500;
 			font-size: 24px;
 		}
 
+		& > a:hover > &-logo {
+			background-image: url('../../img/logo-black.png');
+		}
+
+		& > a:hover > &-name1 {
+			color: $primary-color;
+		}
+
 		&-name1{
 			color: #000;			
+			padding-left: 17px;
 		}
 
 		&-name2{
-			color: $primary-color;			
+			color: #000;			
+			margin-left: -4px;
+		}
+
+		&-text{
+			margin-top: 23px;
 		}
 	}
 	
 	&__nav {
 		grid-area: nav;
+		margin-left: 86px;
+		&-title{
+			color: $text-color-grey;
+			font-weight: 500;			
+			padding-bottom: 23px;
+		}
+		& > ul{
+			list-style: none;
+		}
+		&-item{
+			color: $primary-color;
+			font-size: 15px;
+
+			&:hover{
+				text-decoration: underline;
+				cursor: pointer;
+			}
+		}
 	}
 
 	&__contacts {
 		grid-area: contacts;
+		margin-left: 90px;
+		&-phone{
+			margin-bottom: 38px;
+		}
 	}
+
 
 	&__info {
 		grid-area: info;
+		margin-left: 81px;
+		&-header{
+			color: $text-color-grey;
+			font-size: 16px;
+			padding-left: 52px;
+		}
+
+		&-content{
+			margin-top: 23px;
+			color: $small-text-color;
+			font-size: 14px;
+		}
+	}
+}
+
+.phone{
+	&-num{
+		color: #3f3f3f;
+		font-weight: 800;
+		font-size: 30px;
+	}
+
+	&-rem{
+		color: $small-text-color;
+		text-transform: uppercase;
+	}
+}
+
+.address{
+	&-city{
+		color: $text-color-grey;
+		font-size: 16px;
+	}
+	&-str{
+		margin-top: 20px;
+		color: $small-text-color;
+		font-size: 14px; 
 	}
 }
 

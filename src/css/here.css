@@ -36,6 +36,7 @@
     display: flex;
     color: #323232; }
     .topics__topic-title {
+      font-weight: 400;
       font-size: 16px;
       color: #323232; }
     .topics__topic-content {

@@ -7,9 +7,7 @@
 		padding-top: 60px;
 		padding-bottom: 80px;
 		font-family: Montserrat;	
-		//position: relative;
-		
-		//	background-color: #aaa;
+
 		&-slick{
 			margin: 0 auto;
 			max-width: 700px;
@@ -91,8 +89,6 @@ a{
 		& p a{
 			display: block;				
 		}
-
-
 	}
 
 	&-img> div{
@@ -113,7 +109,7 @@ a{
 	&-title{
 		font-size: 24px;
 		font-weight: 800;
-		color: #635c73;
+		color: $text-color-header;
 	}
 	&-contact{
 		font-size: 16px;
