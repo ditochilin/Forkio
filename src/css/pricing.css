@@ -90,7 +90,8 @@
   .gridf {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-column-gap: 15px; } }
+    grid-column-gap: 15px;
+    grid-row-gap: 15px; } }
 
 @media screen and (max-width: 481px) {
   .people__content-title {
@@ -99,8 +100,7 @@
   .people__content-grid {
     padding: 60px 0 82px 0; }
   .gridf {
-    grid-template-columns: 1fr;
-    grid-row-gap: 50px; }
+    grid-template-columns: 1fr; }
     .gridf__item {
       justify-self: center;
       width: 260px; } }
