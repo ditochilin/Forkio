@@ -1,6 +1,5 @@
 .revolutionary-editor {
-  font-family: Montserrat;
-  padding: 0 10px; }
+  font-family: Montserrat, sans-serif; }
   .revolutionary-editor__container {
     margin-top: 50px;
     padding: 70px 0; }

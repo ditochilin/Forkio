@@ -1,10 +1,9 @@
 .here {
-  padding: 0 10px;
-  background-color: #f4f4f4; }
+  background-color: #eeeeef; }
   .here-content {
     padding-top: 20px;
     position: relative;
-    font-family: Montserrat; }
+    font-family: Montserrat, sans-serif; }
   .here .wrapper {
     display: -webkit-box;
     display: flex;

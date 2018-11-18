@@ -1,20 +1,19 @@
 @import 'vars.scss';
 
-* {
-	margin: 0;
-	padding: 0;
+.main-container{
+	min-width: 320px;
 }
 
-.main-container{
-	max-width: 1200px;
-	min-width: 320px;
+.container{
 	margin: 0 auto;
-	padding: 0 -10px;
+	max-width: 1200px;
+	padding: 0 10px;
 }
 
 .btn{
 	display: block;
-	font-family: Montserrat;
+	align-self: center;
+	font-family: Montserrat, sans-serif;
 	text-decoration: none;
 	color: #fff;
 	font-weight: bold;	
@@ -46,12 +45,4 @@
 	}	
 }
 	
-
-.header__btn{
-	width: 145px;
-	padding: 10px; 
-	flex-shrink: 0;
-	border-radius: 19px;
-	order: 2;
-}
 

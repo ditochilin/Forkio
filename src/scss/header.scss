@@ -3,44 +3,64 @@
 .header{
 	color: $primary-color;
 	background-color: $primary-bg-color;	
-	
-	.container{
-		margin: 0 90px;
-	}
 
 	&__content{
-		padding:  33px 0;
+		position: relative;
+		margin: 0 90px;
 		a:link{
 			text-decoration: none;
 		}			
 	}	
 
 	&__logo{
-		display: flex;
-		justify-content: center;
-		align-items: center; 
+		display: block;
+		position: absolute;
+		top: 50%;                       
+   		transform: translate(0, -50%);
 	}
 
 	&__flex{
 		&-wrapper{
-			display: flex;
-			justify-content: space-between;
+			height: 100px;
+			display: block;
 			text-align: center;			
-			ul>li> a:hover, h2:hover {
+			ul>li> a:hover {
 				color: white;
+			}
+			& > a:hover > h2 {
+				color: white;
+			}
+			& > a:hover > .logo__logo-img {
+				background-image: url('../../img/LogoHover.png');
 			}
 		}
 	}
 
 	&__burger-menu{
-		flex-shrink: 0;
-		margin-left: auto; 
-		font-size: 32px;	
+		display: none;		
+	}
+
+	&__btn{
+		position: absolute;
+		right: 0;
+		top: 50%;                       
+   		transform: translate(0, -50%);
+
+   		width: 145px;
+		padding: 10px; 
+		border-radius: 19px;
 	}
 }
 
 .menu{
-	display: flex;
+	position: absolute;
+	display: block;
+	min-width: 65%;
+	float: left;
+	top: 50%;       
+	left: 50%;
+	margin: 0 auto;                 
+   	transform: translate(-50%, -50%);
 	font-weight: bold;
 
 	&_item:first-child {
@@ -49,10 +69,12 @@
 
 	&_item{
 		list-style-type: none; 
+		display: inline-block;
+		float: none;
 	}
 
 	&__link{
-		font-family: Montserrat;
+		font-family: Montserrat, sans-serif;
 		font-size: 16px;
 		color: $primary-color;
 		padding: 0 24px;
@@ -60,9 +82,12 @@
 }
 
 .logo{
+		display: block;
+		float: left;
 	&__test{
-		margin-left: 30px;
-		float: right;
+		margin: 0 0 0 58px;
+		text-align: left;
+		//float: right;
 		color: $primary-color;
 		font-weight: bold;	
 		text-transform: uppercase;
@@ -78,106 +103,137 @@
 			height: 29px;
 			width: 29px;		
 			background-image: url('../../img/Logo.svg');
-			&:hover{
-				background-image: url('../../img/LogoHover.png');
-			}		
 		}
 	}
 }
+
+
+@media screen and (max-width: 1160px){
+	.header{
+		&__content{
+			margin: 0 10px;
+		}	
+	}
+ }
 
 @media screen and (max-width: 993px){
 	.header{
-		height: 140px;
-
-		.container{
-			margin: 0 20px; 
-			position: relative;			
-		}
-
-		&__burger-menu{
-			position: absolute;	
-			min-width: 570px;
-			left: 50%;
-			top: 90px;
-			transform: translateX(-50%);
+		&__flex{
+			&-wrapper{		
+				height: 120px;
+			}
 		}
 	}
+
+	.menu{
+		width: 100%;
+		top: 100px;
+		line-height: 50px; 
+		padding-left: 0;
+
+		&__link{
+			padding: 0 20px;
+		}
+	}
+
 }
 
-@media screen and (max-width: 768px){
+@media screen and ( max-width: 605px){
 	.menu{
 		&__link{
-			padding: 0 10px;
+			padding: 0 3px;
 		}
 	}
-	.header__burger-menu{
-		min-width: 470px;
-	}
-}
+}	
 
 @media screen and ( max-width: 480px){
-	
-	.header__btn{
-		position: absolute;
-		left: 50%;
-		top: 27px;
-		transform: translateX(-50%);
-	}
 
 	.header{
-
-		height: 103px;
-
+		position: relative;
+			
 		.container{
-			margin: 0 27px;
+			margin: 0 15px;
+		}
+
+		&__content{
+			position: static;
 		}
 		
-		&__content{
-			padding: 33px 0 33px 0;
-		}
-
-		.logo__test{
-			display: none;
+		&__flex{
+			&-wrapper{		
+				height: 103px;
+			}
 		}
 
 		&__burger-menu{
-			min-width: 100%;
-			top: 27px;
-		
-		
-			text-align: right;
-			
+			top: 50%;
+			transform: translateY(-50%);
+			position: absolute;
+			display: block;
+			width: 35px; 
+			right: 25px;
+			font-size: 32px;
+			line-height: 1.6;
+
 			&:hover{
 				cursor: pointer;
 				&:before{
 					content: '\2715';		
 				}
-			}
-
-			&:hover > .menu{
-				display: block;
+				 transition:0;
 			}
 		}
 
+		&__logo{
+			top: 50%; 
+			& > h2{
+				margin: 0 0 0 40px;
+			}
+		}
+	
+		&__btn{
+			right: auto;
+			top: 50%;
+			left: 50%;
+			width: 110px;	
+		}
+
 		&__burger-menu:before{
-			height: 90px;
+			
 			content: '\2630';
 		}
 
 		&__burger-menu:hover{
 			color: #fff;
 		}
+
+		&__burger-menu:hover + .menu{
+			display: block;
+		}
+
+		&__burger-menu:active + .menu{
+			display: none;
+		}
 	}
+
+
+.menu:hover {
+	display: block;
+}
 
 .menu{
 	display: none;
+	position: absolute;
+	top: 75px;
+	left: 0;
+	transform: translate(0,0);
 	background-color: $primary-bg-color;
-	flex-direction: column;
 	width: 100%;
 	font-weight: 300;
+	z-index: 1000;
 
 	li:first-child{
-		display: block;
+		display: flex;
 	}
 
 	&_item{
@@ -185,19 +241,38 @@
 		align-items: center;
 		text-align: left;
 		padding: 20px 0;
-		width: 100%;
 		border-bottom: 1px solid #333;
-
+		cursor: pointer;
 	}
+
+	&_item:hover > &__link{
+		
+		color: $primary-color;
+		border-left: 3px solid $primary-color ;	
+	}	
 
 	&__link{
+		padding: 0 33px;
 		color: #fff;
+		font-size: 32px;
 	}
 
-	&__link:hover{
-		color: $primary-color;
-		border-left: 3px solid $primary-color ;
-	}
+
 }
 }	
 
+@media screen and ( max-width: 400px){
+
+	.header{
+		&__btn{
+			transform: translate(-50%,-50%);
+		}
+	}	
+
+	.logo{
+		&__test{
+			display: none;
+		
+		}
+	}
+}

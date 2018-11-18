@@ -1,16 +1,15 @@
-* {
-  margin: 0;
-  padding: 0; }
-
 .main-container {
-  max-width: 1200px;
-  min-width: 320px;
+  min-width: 320px; }
+
+.container {
   margin: 0 auto;
-  padding: 0 -10px; }
+  max-width: 1200px;
+  padding: 0 10px; }
 
 .btn {
   display: block;
-  font-family: Montserrat;
+  align-self: center;
+  font-family: Montserrat, sans-serif;
   text-decoration: none;
   color: #fff;
   font-weight: bold; }
@@ -30,22 +29,15 @@
   .btn_download {
     width: 290px; } }
 
-.header__btn {
-  width: 145px;
-  padding: 10px;
-  flex-shrink: 0;
-  border-radius: 19px;
-  -webkit-box-ordinal-group: 3;
-  order: 2; }
-
-.footer__content {
-  font-family: Montserrat; }
+.footer {
+  background-color: #f4f4f4; }
+  .footer__content {
+    font-family: Montserrat, sans-serif; }
 
 .footergrid__header {
   display: grid;
   grid-template-areas: "title username phone callme";
-  padding: 0 90px;
-  background-color: #f4f4f4; }
+  padding: 0 90px; }
   .footergrid__header > * {
     align-self: center; }
   .footergrid__header-title {
@@ -93,9 +85,10 @@
     cursor: pointer; }
 
 .footergrid__white-container {
+  background-color: #fff;
   display: grid;
   grid-template-areas: "forkio nav contacts info";
-  padding: 60px 35px; }
+  padding: 60px 25px; }
 
 .footergrid__forkio {
   grid-area: forkio;

@@ -1,12 +1,11 @@
 @import 'vars.scss';
 
 .steven{
-	padding: 0 10px;
 	
 	&__content{		
 		padding-top: 60px;
 		padding-bottom: 80px;
-		font-family: Montserrat;	
+		font-family: Montserrat, sans-serif;	
 
 		&-slick{
 			margin: 0 auto;

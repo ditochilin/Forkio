@@ -1,13 +1,12 @@
 @import 'vars.scss';
 
 .here{
-	padding: 0 10px;
-	background-color: #f4f4f4;
+	background-color: #eeeeef;
 
 	&-content{
 		padding-top: 20px;
 		position: relative;
-		font-family: Montserrat;
+		font-family: Montserrat, sans-serif;
 	}
 
 	.wrapper{
@@ -100,19 +99,6 @@
 				text-align: center;
 			}
 
-		}
-	}
-}
-
-@media screen and (max-width: 768px){
-	.here{
-		.wrapper{
-
-			&__img{	
-				//min-height: 381px;
-				//min-width: 515px; 
-
-			}	
 		}
 	}
 }

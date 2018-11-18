@@ -1,10 +1,9 @@
 .people {
-  padding: 0 10px;
   background: url("/img/People/bgPeople.png") no-repeat top #4a3b4e; }
   .people__content {
     padding-top: 97px;
     color: #fff;
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     text-align: center; }
     .people__content-title {
       font-size: 48px;

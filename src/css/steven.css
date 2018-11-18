@@ -1,12 +1,10 @@
-.steven {
-  padding: 0 10px; }
-  .steven__content {
-    padding-top: 60px;
-    padding-bottom: 80px;
-    font-family: Montserrat; }
-    .steven__content-slick {
-      margin: 0 auto;
-      max-width: 700px; }
+.steven__content {
+  padding-top: 60px;
+  padding-bottom: 80px;
+  font-family: Montserrat, sans-serif; }
+  .steven__content-slick {
+    margin: 0 auto;
+    max-width: 700px; }
 
 .slick {
   padding: 0 25px; }

@@ -46,7 +46,7 @@ function autoprefixFun(){
 }
 
 function concatCss(){
-	return gulp.src('./src/css/**/*.css')
+	return gulp.src(['./src/css/**/*.css','./node_modules/normalize.css/normalize.css'])
 		.pipe(concat('style.css'))
 		.pipe(gulp.dest('./src/css/'));	
 }
@@ -120,10 +120,9 @@ function watch(){
 
 }
 
-gulp.task('serve', watch);
+//gulp.task('serve', watch);
+
+gulp.task('dev',gulp.series(cleanDistCss, cleanDistJs,  copyCss, copyJs, watch));
 
 
-//gulp.task('dev','serve'));
-
-
-//gulp.task('build', gulp.series(cleanDist, copyCss, copyJs));
+gulp.task('build', gulp.series(cleanDistCss, cleanDistJs, copyCss, copyJs));
