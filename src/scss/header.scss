@@ -23,7 +23,7 @@
 		&-wrapper{
 			height: 100px;
 			display: block;
-			text-align: center;			
+			
 			ul>li> a:hover {
 				color: white;
 			}
@@ -36,8 +36,35 @@
 		}
 	}
 
-	&__burger-menu{
-		display: none;		
+	&__burger{
+		
+		&-wrapper{
+			display: none;
+			position: absolute;
+			right: 25px;
+			top: 50%;
+			transform: translate(0,-50%);
+		}	
+
+		&-icon{
+			display: block;
+			width: 26px;
+			height: 26px;
+			cursor: pointer;
+			
+			&:hover > span {
+				background-color: #fff;
+			}
+			
+			&> span {
+				position: absolute;
+				background-color: $primary-color;
+				height: 3px;
+				width: 100%;
+				top: 50%;
+				transition: 0.6s;
+			}
+		}
 	}
 
 	&__btn{
@@ -45,11 +72,37 @@
 		right: 0;
 		top: 50%;                       
    		transform: translate(0, -50%);
-
+		text-align: center;			
    		width: 145px;
 		padding: 10px; 
 		border-radius: 19px;
 	}
+}
+
+.header__burger-icon .one {
+	top: 10%;
+	width: 65%;
+	left: 100%;
+	transform: translate(-100%, 0);			
+}
+
+.header__burger-icon .four {
+	top: 90%;
+}
+
+// ***  active humburger menu
+
+.header__burger-icon.active .one, .header__burger-icon.active .four{
+	display: none;
+}
+
+
+.header__burger-icon.active .two{
+	transform: rotate(45deg);
+}
+ 
+.header__burger-icon.active .three{
+	transform: rotate(-45deg);
 }
 
 .menu{
@@ -118,6 +171,10 @@
 
 @media screen and (max-width: 993px){
 	.header{
+		&__logo, &__btn{
+			top: 40%;
+		}
+
 		&__flex{
 			&-wrapper{		
 				height: 120px;
@@ -165,23 +222,8 @@
 			}
 		}
 
-		&__burger-menu{
-			top: 50%;
-			transform: translateY(-50%);
-			position: absolute;
-			display: block;
-			width: 35px; 
-			right: 25px;
-			font-size: 32px;
-			line-height: 1.6;
-
-			&:hover{
-				cursor: pointer;
-				&:before{
-					content: '\2715';		
-				}
-				 transition:0;
-			}
+		 &__burger-wrapper{
+		 	display: block;
 		}
 
 		&__logo{
@@ -197,29 +239,9 @@
 			left: 50%;
 			width: 110px;	
 		}
-
-		&__burger-menu:before{
-			
-			content: '\2630';
-		}
-
-		&__burger-menu:hover{
-			color: #fff;
-		}
-
-		&__burger-menu:hover + .menu{
-			display: block;
-		}
-
-		&__burger-menu:active + .menu{
-			display: none;
-		}
 	}
 
 
-.menu:hover {
-	display: block;
-}
 
 .menu{
 	display: none;
@@ -256,9 +278,13 @@
 		color: #fff;
 		font-size: 32px;
 	}
-
-
 }
+
+
+.visible {
+	display: block;
+}
+
 }	
 
 @media screen and ( max-width: 400px){
@@ -271,8 +297,7 @@
 
 	.logo{
 		&__test{
-			display: none;
-		
+			display: none;		
 		}
 	}
 }

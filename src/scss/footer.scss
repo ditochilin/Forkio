@@ -31,7 +31,7 @@
 		}
 
 		&>input {
-			max-width: 336px;
+			min-width: 150px;
 			height: 44px;
 			border-radius: 22px;
 			border: none;
@@ -115,7 +115,7 @@
 
 		&-name1{
 			color: #000;			
-			padding-left: 17px;
+			padding-left: 14px;
 		}
 
 		&-name2{
@@ -213,7 +213,7 @@
 @media screen and (max-width: 993px){
 	.footergrid{
 		&__header{		
-			padding: 0 30px;	
+			padding: 0 20px;	 
 			grid-template-areas: 
 			"title title"
 			"username phone"
@@ -247,13 +247,18 @@
 		&__contacts {
 			margin-left: 0px;
 		}
+
+		&__nav, &__info {
+			margin-left: 35px;
+		}
 	}
 }
 
 @media screen and (max-width: 600px){
 	.footergrid{
 		&__header{		
-	
+			grid-template-columns: 1fr 1fr;
+
 			& > input {
 				margin: 28px 5px 25px 5px;
 			}
@@ -265,12 +270,14 @@
 	.footergrid{
 
 		&__header{		
+			grid-template-columns: 1fr; 
 			grid-template-areas: 
 			"title"
 			"username"
 			"phone"
 			"callme";	
-			
+
+
 			&-title{
 				font-size: 28px;
 				text-align: center;	
@@ -282,7 +289,7 @@
 			}
 
 			&-callme{
-				margin-top: 20px;
+				margin-top: 13px;
 			}
 		}
 

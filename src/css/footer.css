@@ -46,7 +46,7 @@
     font-size: 30px;
     font-weight: 700; }
   .footergrid__header > input {
-    max-width: 336px;
+    min-width: 150px;
     height: 44px;
     border-radius: 22px;
     border: none;
@@ -111,7 +111,7 @@
     color: #8d81ac; }
   .footergrid__forkio-name1 {
     color: #000;
-    padding-left: 17px; }
+    padding-left: 14px; }
   .footergrid__forkio-name2 {
     color: #000;
     margin-left: -4px; }
@@ -180,7 +180,7 @@
 
 @media screen and (max-width: 993px) {
   .footergrid__header {
-    padding: 0 30px;
+    padding: 0 20px;
     grid-template-areas: "title title" "username phone" "callme callme"; }
     .footergrid__header-title, .footergrid__header-callme {
       justify-self: center; }
@@ -194,14 +194,19 @@
     grid-template-areas: "forkio nav" "contacts info";
     padding: 22px 35px; }
   .footergrid__contacts {
-    margin-left: 0px; } }
+    margin-left: 0px; }
+  .footergrid__nav, .footergrid__info {
+    margin-left: 35px; } }
 
 @media screen and (max-width: 600px) {
-  .footergrid__header > input {
-    margin: 28px 5px 25px 5px; } }
+  .footergrid__header {
+    grid-template-columns: 1fr 1fr; }
+    .footergrid__header > input {
+      margin: 28px 5px 25px 5px; } }
 
 @media screen and (max-width: 480px) {
   .footergrid__header {
+    grid-template-columns: 1fr;
     grid-template-areas: "title" "username" "phone" "callme"; }
     .footergrid__header-title {
       font-size: 28px;
@@ -210,7 +215,7 @@
     .footergrid__header > input {
       margin: 10px; }
     .footergrid__header-callme {
-      margin-top: 20px; }
+      margin-top: 13px; }
   .footergrid__white-container {
     grid-template-areas: "forkio" "nav" "contacts" "info"; }
   .footergrid__nav {

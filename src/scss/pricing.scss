@@ -17,6 +17,7 @@
   		&-grid{
   			display: inline-block;
   			padding: 80px 0 80px 0; 
+
   		}
   	}
   }
@@ -27,28 +28,31 @@
   	grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr ;
 
-    &__item:hover {
-      width: 300px !important;
-      height: 560px !important;
-      margin-top: -15%;
-      background: rgba(0,0,0,.1) !important; 
+    // &__item-active {
+    //   max-width: 300px;
+    //   height: 560px;
+    //   margin-top: -15%;
+    //   background: rgba(0,0,0,.1); 
 
-      &-title {
-       background: rgba(0,0,0,.1) !important;
-       font-size: 26px;
-     }
-     &-price{  			
-       font-size: 82px !important;  			
-     }
-     &-purchase{
-       font-size: 16px !important;
-       background: rgba(255,255,255,.1) !important;
-    }
-  }
+    //   &-title {
+    //    background: rgba(0,0,0,.1);
+    //    font-size: 26px;
+    //  }
+    //  &-price{  			
+    //    font-size: 82px;  			
+    //  }
+    //  &-purchase{
+    //    font-size: 16px;
+    //    background: rgba(255,255,255,.1);
+    // }
+  // }
 
   &__item {
-    transition: all 0.5s ease;
-    width: 260px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    max-width: 260px;
     height: 460px;
     background: rgba(255,255,255,.1); 
     position: relative;	
@@ -59,6 +63,7 @@
      font-size: 24px;
      font-weight: 200;
      text-transform: uppercase;
+     width: 100%;
    }
    &-price{
      padding-top: 0.5em;
@@ -77,7 +82,6 @@
      height: 6px;
      border: 0;
      border-top: 6px solid #8d81ac;
-     margin: 1em auto;
      padding: 0;
    }
    &-desc{
@@ -90,7 +94,6 @@
      font-size: 15px;
      text-transform: uppercase;
      bottom: 40px; 
-     transform: translateX(-50%); 
      position: absolute;
 
      border: none;
