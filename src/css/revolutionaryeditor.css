@@ -1,48 +1,53 @@
-.revolutionary-editor {
-  font-family: Montserrat, sans-serif; }
-  .revolutionary-editor__container {
-    margin-top: 50px;
-    padding: 70px 0; }
-  .revolutionary-editor__content {
-    text-align: center; }
-  .revolutionary-editor__blocks {
-    display: -webkit-box;
-    display: flex;
-    flex-wrap: wrap;
-    -webkit-box-pack: center;
-    justify-content: center;
-    width: 100%; }
-    .revolutionary-editor__blocks-block {
-      float: left;
-      margin: 20px 10px; }
-  .revolutionary-editor__title {
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 56px;
-    color: #635c73; }
-  .revolutionary-editor__slogan {
-    margin: 35px 0;
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    font-size: 21px;
-    color: #323232; }
-  .revolutionary-editor-btn {
-    color: #24292e;
+.revolutionary-editor__container {
+  margin-top: 50px;
+  padding: 70px 0; }
+
+.revolutionary-editor__content {
+  text-align: center; }
+
+.revolutionary-editor__blocks {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  justify-content: center;
+  width: 100%; }
+  .revolutionary-editor__blocks-block {
     float: left;
-    font-size: 11px;
-    list-style-type: none;
-    padding: 0 15px 0 15px; }
-  .revolutionary-editor-btn > svg {
-    width: 15px;
-    height: 15px; }
-  .revolutionary-editor-info {
-    border: 1px solid #bbb;
-    border-left: none;
-    text-align: center;
-    width: 60px;
-    height: 17px;
-    font-weight: 700;
-    font-size: 12px; }
+    margin: 20px 10px; }
+
+.revolutionary-editor__title {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 56px;
+  color: #635c73; }
+
+.revolutionary-editor__slogan {
+  margin: 35px 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  color: #323232; }
+
+.revolutionary-editor-btn {
+  color: #24292e;
+  float: left;
+  font-size: 11px;
+  list-style-type: none;
+  padding: 0 15px 0 15px; }
+
+.revolutionary-editor-btn > svg {
+  width: 15px;
+  height: 15px; }
+
+.revolutionary-editor-info {
+  border: 1px solid #bbb;
+  border-left: none;
+  text-align: center;
+  width: 60px;
+  height: 17px;
+  font-weight: 700;
+  font-size: 12px; }
 
 .btn-label {
   display: block;
@@ -62,7 +67,7 @@
   .revolutionary-editor__slogan {
     font-size: 14px; }
   .revolutionary-editor-info {
-    width: 40px; }
+    width: 45px; }
   .revolutionary-editor-btn {
     color: #24292e;
     float: left;

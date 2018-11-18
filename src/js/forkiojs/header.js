@@ -10,9 +10,4 @@ $(document).ready(function(){
 		$('.menu').addClass('visible');
 		$(this).addClass('active');
 	})
-
-
-	// $('.menu').hover(function(){
-	// 	$('.menu').toggleClass('visible');
-	// })
 })

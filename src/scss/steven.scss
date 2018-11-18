@@ -5,39 +5,42 @@
 	&__content{		
 		padding-top: 60px;
 		padding-bottom: 80px;
-		font-family: Montserrat, sans-serif;	
 
-		&-slick{
-			margin: 0 auto;
-			max-width: 700px;
-		}
+		// &-slick{
+		// 	margin: 0 auto;
+		// 	max-width: 700px;
+		// }
 	}
 }
 
 
 .slick {
-		padding: 0 25px;
 
 	&__item {
-		
+		position: relative;
+		padding: 0 90px;
+
 		&-recipient {
-			display: flex;			
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
 		}
 
 		&-message {
-			font-family: 'Lato', sans-serif; 
+
+			font-family: $font-lato; 
 			font-size: 20px;
 			font-weight: 400;
-			margin: 35px 0 27px 0; 
+			margin: 110px 0 0 0; 
 			& > p {
-				display: inline;
-				//text-align: center;
+				text-align: center;
 				color: #333333;
 			}
 		}
+
 		&-age {
-			align-self: center;
 			color: $small-text-color;
+			text-align: center;
 		}	
 	}
 	
@@ -69,25 +72,27 @@
 
 }
 
-
-
 a{
 	text-decoration: none;
 }
 
 .recipient{
-	display: flex;
 
 	&-info{
-		margin: 0 20px;
-
-		&>div{				
-			transform: translateY(35%);
-		}
+		display: inline-block;
+		margin: 0 0 0 15px; 
 
 		& p a{
 			display: block;				
 		}
+	}
+
+	&-content {
+		margin-top: 10px;
+	}
+
+	&-img {
+		float: left;
 	}
 
 	&-img> div{
@@ -106,6 +111,7 @@ a{
 
 
 	&-title{
+		margin: 0 0 10px 0; 
 		font-size: 24px;
 		font-weight: 800;
 		color: $text-color-header;
@@ -188,7 +194,6 @@ a{
 
 		&-info{
 			margin-top: 18px;
-			align-self: center;
 			font-size: 14px;
 			color: $small-text-color;
 		}
@@ -196,23 +201,24 @@ a{
 }
 
 @media screen and (max-width: 993px){
-	.steven{
-
-		&-slick{
-			max-width: 600px;
-		}
-		
-	}
 	.slick {
-
-	&__item {
-		
-		&-message {
-			max-width: 550px;
+		&__item {
+			padding: 0 40px;
 		}
-	}
 	}		
 	.media{
 		margin-top: 0;
+	}
+}
+
+@media screen and (max-width: 650px){
+	slick {
+
+		&__item {
+
+			&-message {
+				margin: 160px 0 0 0; 
+			}
+		}
 	}
 }

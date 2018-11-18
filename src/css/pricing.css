@@ -3,7 +3,6 @@
   .pricing__content {
     padding: 75px 0;
     color: #fff;
-    font-family: Montserrat, sans-serif;
     text-align: center; }
     .pricing__content-title {
       font-size: 48px;
@@ -96,8 +95,4 @@
 
 @media screen and (max-width: 400px) {
   .pricing__content-title {
-    font-size: 28px; }
-  .gridf {
-    grid-column-gap: 0; }
-    .gridf__item_highlight {
-      width: 288px !important; } }
+    font-size: 28px; } }

@@ -64,6 +64,30 @@
 				top: 50%;
 				transition: 0.6s;
 			}
+
+			& .one {
+				top: 10%;
+				width: 65%;
+				left: 100%;
+				transform: translate(-100%, 0);			
+			}
+
+			& .four {
+				top: 90%;
+			}
+
+			&.active
+			 .one, &.active .four{
+				display: none;
+			}
+
+			&.active .two{
+				transform: rotate(45deg);
+			}
+ 
+			&.active .three{
+				transform: rotate(-45deg);
+			}
 		}
 	}
 
@@ -77,32 +101,6 @@
 		padding: 10px; 
 		border-radius: 19px;
 	}
-}
-
-.header__burger-icon .one {
-	top: 10%;
-	width: 65%;
-	left: 100%;
-	transform: translate(-100%, 0);			
-}
-
-.header__burger-icon .four {
-	top: 90%;
-}
-
-// ***  active humburger menu
-
-.header__burger-icon.active .one, .header__burger-icon.active .four{
-	display: none;
-}
-
-
-.header__burger-icon.active .two{
-	transform: rotate(45deg);
-}
- 
-.header__burger-icon.active .three{
-	transform: rotate(-45deg);
 }
 
 .menu{
@@ -127,7 +125,6 @@
 	}
 
 	&__link{
-		font-family: Montserrat, sans-serif;
 		font-size: 16px;
 		color: $primary-color;
 		padding: 0 24px;
@@ -140,11 +137,10 @@
 	&__test{
 		margin: 0 0 0 58px;
 		text-align: left;
-		//float: right;
 		color: $primary-color;
 		font-weight: bold;	
 		text-transform: uppercase;
-		font-family: 'Lato', sans-serif;
+		font-family: $font-lato;
 		font-size: 24px;
 	}	
 

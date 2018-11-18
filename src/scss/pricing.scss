@@ -6,7 +6,6 @@
   		
   		padding: 75px 0;
   		color: #fff;
-  		font-family: Montserrat, sans-serif;	
   		text-align: center;
 
   		&-title {
@@ -155,12 +154,6 @@
       &-title{
         font-size: 28px;
       }
-    }
-  }
-  .gridf{
-      grid-column-gap: 0;
-        &__item_highlight {
-      width: 288px !important;
     }
   }
 }

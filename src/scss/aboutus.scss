@@ -10,7 +10,6 @@
 	.container{
 		display: flex;
 		justify-content: center;
-		font-family: Montserrat, sans-serif;
 	}
 
 	&__title{
@@ -22,7 +21,7 @@
 
 	&__slogan{
 		color: $primary-color;
-		font-family: 'Lato', sans-serif;
+		font-family: $font-lato;
 		font-size: 30px;
 		margin: 18px 0 0 0;
 	}
@@ -43,9 +42,7 @@
 	position: absolute;
 	bottom: 0;
 	left: 50%;
-	transform: translateX(-50%);
-//	padding-top: 50px;
-	margin-bottom: -60px;
+	transform: translate(-50%, 75%);
 	&__info{
 		padding-top: 13px;
 		color: #848e97;

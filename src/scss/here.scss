@@ -6,7 +6,6 @@
 	&-content{
 		padding-top: 20px;
 		position: relative;
-		font-family: Montserrat, sans-serif;
 	}
 
 	.wrapper{
@@ -19,7 +18,6 @@
 				'topics image'
 				'topics image'
 				 ;
-
 				
 		&__title{
 			grid-area: title;
@@ -33,22 +31,21 @@
 			grid-area: image;
 			overflow: hidden;;
 		}
-
 	}
 }
 
 
 .topics{
 	grid-area: topics;
-	display: flex;
-	flex-wrap: wrap;
-		
-	&__topic{
-		
-		display: flex;
-		
+	//display: flex;
+	//flex-wrap: wrap;
+
+	&__topic{		
+		display: flex;		
 		color: $text-color-grey;
-		&-title{				
+		
+		&-title{	
+			margin: 0 0 10px 0;			
 			font-size: 16px;
 			color: $text-color-grey;	
 		}	
@@ -56,34 +53,26 @@
 			font-size: 14px;	
 			color: $small-text-color;
 		}		
-		&-img > div{
+
+		&-img {
 			display: block;
-			min-width: 111px;
-			min-height: 90px;
-			background-repeat: no-repeat;
-			background-size: contain;								
-			background-position: center;		
+			min-width: 130px;
+			
+			//left: -50%;
+			//transform: translateX(50%);
 		}
+
 		&-item{
 			margin: 0 30px;
 		}				
 	}
 }
 
-.topic1-img{
-	background-image: url("/img/topic1.png");
-}
-
-.topic2-img{
-	background-image: url("/img/topic2.png");
-}
-
-.topic3-img{
-	background-image: url("/img/topic3.png");
-}
-
-.topic4-img{
-	background-image: url("/img/topic4.png");
+.topic__img{
+	display: block;
+	width: auto;
+	height: 90px;
+    margin: auto; 
 }
 
 @media screen and(max-width: 993px){

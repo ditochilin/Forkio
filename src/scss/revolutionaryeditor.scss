@@ -1,7 +1,6 @@
 @import 'vars.scss';
 
 .revolutionary-editor{
-	font-family: Montserrat, sans-serif;
 
 	&__container{
 		margin-top: 50px; 
@@ -33,7 +32,7 @@
 
 	&__slogan{
 		margin: 35px 0;
-		font-family: 'Lato', sans-serif;
+		font-family: $font-lato;
 		font-weight: 400;
 		font-size: 21px;
 		color: $text-color-grey;
@@ -92,14 +91,15 @@
 		}
 
 		&-info{
-			width: 40px;
+			width: 45px;
 		}
-			&-btn{	
-		color: #24292e;
-		float: left;
-		font-size: 11px;
-		list-style-type: none;
-		padding: 0 5px 0 5px;
+
+		&-btn{	
+			color: #24292e;
+			float: left;
+			font-size: 11px;
+			list-style-type: none;
+			padding: 0 5px 0 5px;
 		}
 	}
 }

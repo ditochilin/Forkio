@@ -2,8 +2,7 @@
   background-color: #eeeeef; }
   .here-content {
     padding-top: 20px;
-    position: relative;
-    font-family: Montserrat, sans-serif; }
+    position: relative; }
   .here .wrapper {
     margin-top: 30px;
     display: grid;
@@ -20,41 +19,29 @@
       overflow: hidden; }
 
 .topics {
-  grid-area: topics;
-  display: -webkit-box;
-  display: flex;
-  flex-wrap: wrap; }
+  grid-area: topics; }
   .topics__topic {
     display: -webkit-box;
     display: flex;
     color: #323232; }
     .topics__topic-title {
+      margin: 0 0 10px 0;
       font-size: 16px;
       color: #323232; }
     .topics__topic-content {
       font-size: 14px;
       color: #848e97; }
-    .topics__topic-img > div {
+    .topics__topic-img {
       display: block;
-      min-width: 111px;
-      min-height: 90px;
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: center; }
+      min-width: 130px; }
     .topics__topic-item {
       margin: 0 30px; }
 
-.topic1-img {
-  background-image: url("/img/topic1.png"); }
-
-.topic2-img {
-  background-image: url("/img/topic2.png"); }
-
-.topic3-img {
-  background-image: url("/img/topic3.png"); }
-
-.topic4-img {
-  background-image: url("/img/topic4.png"); }
+.topic__img {
+  display: block;
+  width: auto;
+  height: 90px;
+  margin: auto; }
 
 @media screen and (max-width: 993px) {
   .here .wrapper {
