@@ -2,9 +2,8 @@
 
 .people{
 
-	background: url("/img/People/bgPeople.png") no-repeat top #4a3b4e;
-	
-	
+	background: url("/dist/img/People/bgPeople.png") no-repeat top #4a3b4e;
+		
 	&__content{
 		padding-top: 97px;
 		color: #fff;
@@ -38,10 +37,7 @@
 			padding: 0;
 		}
 	}
-
-
 }
-
 
 .grid{
 	display: grid;
@@ -78,7 +74,7 @@
 	vertical-align: middle;
 }
 
-@media screen and (max-width: 993px){
+@include adaptWhenWidthIs($width993){
 	.grid{
 		grid-template-columns: 1fr 1fr;
   		grid-template-rows: 1fr 1fr 1fr;
@@ -86,17 +82,15 @@
 	}
 }
 
-@media screen and (max-width: 768px){
+@include adaptWhenWidthIs($width768){
 	.grid{
  		grid-column-gap: 50px;
 	}
 }
 
 
-@media screen and (max-width: 481px){
-
+@include adaptWhenWidthIs($width480){
 	.people{
-
 		&__content{
 			&-grid{
 				margin-bottom: 71px; 
@@ -106,7 +100,5 @@
 
 	.grid{
 		grid-template-columns: 1fr;
-  		//grid-template-rows: 1fr 1fr 1fr;
-
 	}
 }

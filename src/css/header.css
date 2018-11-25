@@ -15,13 +15,14 @@
     transform: translate(0, -50%); }
   .header__flex-wrapper {
     height: 100px;
-    display: block; }
+    display: block;
+    position: relative; }
     .header__flex-wrapper ul > li > a:hover {
       color: white; }
     .header__flex-wrapper > a:hover > h2 {
       color: white; }
     .header__flex-wrapper > a:hover > .logo__logo-img {
-      background-image: url("../../img/LogoHover.png"); }
+      background-image: url("/dist/img/LogoHover.png"); }
   .header__burger-wrapper {
     display: none;
     position: absolute;
@@ -115,30 +116,36 @@
     background-size: 100%;
     height: 29px;
     width: 29px;
-    background-image: url("../../img/Logo.svg"); }
+    background-image: url("/dist/img/Logo.svg"); }
 
-@media screen and (max-width: 1160px) {
+@media (max-width: 1159px) {
   .header__content {
     margin: 0 10px; } }
 
-@media screen and (max-width: 993px) {
+@media (max-width: 992px) {
   .header__logo, .header__btn {
     top: 40%; }
   .header__flex-wrapper {
     height: 120px; }
   .menu {
+    display: block;
     width: 100%;
     top: 100px;
     line-height: 50px;
-    padding-left: 0; }
+    padding-left: 0;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
     .menu__link {
       padding: 0 20px; } }
 
-@media screen and (max-width: 605px) {
+@media (max-width: 604px) {
   .menu__link {
     padding: 0 3px; } }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 479px) {
   .header {
     position: relative; }
     .header .container {
@@ -192,7 +199,7 @@
   .visible {
     display: block; } }
 
-@media screen and (max-width: 400px) {
+@media (max-width: 399px) {
   .header__btn {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);

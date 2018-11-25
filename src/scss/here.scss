@@ -37,8 +37,6 @@
 
 .topics{
 	grid-area: topics;
-	//display: flex;
-	//flex-wrap: wrap;
 
 	&__topic{		
 		display: flex;		
@@ -57,9 +55,6 @@
 		&-img {
 			display: block;
 			min-width: 130px;
-			
-			//left: -50%;
-			//transform: translateX(50%);
 		}
 
 		&-item{
@@ -75,7 +70,7 @@
     margin: auto; 
 }
 
-@media screen and(max-width: 993px){
+@include adaptWhenWidthIs($width993){
 	.here{
 		.wrapper{
 			grid-template-columns: 1fr;
@@ -100,7 +95,7 @@
 	}
 }
 
-@media screen and (max-width: 480px){
+@include adaptWhenWidthIs($width480){	
 	.topics{		
 		&__topic{
 			flex-direction: column;
@@ -111,7 +106,7 @@
 	}	
 }
 
-@media screen and (max-width: 400px){
+@include adaptWhenWidthIs($width400){
 	.here{
 		.wrapper{
 			&__title{

@@ -13,6 +13,16 @@ function cleanHtml(){
 			.pipe(browserSync.stream());
 }
 
+// function cleanDistSlick(){
+// 		return gulp.src('./dist/slick/', {read: false, allowEmpty: true})
+// 		.pipe(clean());
+// }
+
+function cleanDistImg(){
+		return gulp.src('./dist/img/', {read: false, allowEmpty: true})
+		.pipe(clean());
+}
+
 // task for css
 function cleanDistCss(){
 		return gulp.src('./dist/css/', {read: false, allowEmpty: true})
@@ -63,8 +73,15 @@ function copyCss(){
 		.pipe(browserSync.stream());
 }
 
-gulp.task('clean-css', cleanCss);
-gulp.task('sass', gulp.series('clean-css', styleSass));
+function copyImg(){
+	return gulp.src('./src/img/**/*')
+		.pipe(gulp.dest('./dist/img/'))
+		.pipe(browserSync.stream());
+}
+
+//gulp.task('clean-css', cleanCss);
+gulp.task('clean', gulp.series(cleanCss, cleanDistImg, copyImg));
+gulp.task('sass', gulp.series('clean', styleSass));
 gulp.task('autoprefix',gulp.series('sass', autoprefixFun));
 gulp.task('concat-css',gulp.series('autoprefix', concatCss));
 gulp.task('minify-css',gulp.series('concat-css', minifyCss));
@@ -120,7 +137,6 @@ function watch(){
 
 }
 
-//gulp.task('serve', watch);
 
 gulp.task('dev',gulp.series(cleanDistCss, cleanDistJs,  copyCss, copyJs, watch));
 

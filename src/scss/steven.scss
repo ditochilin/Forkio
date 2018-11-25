@@ -5,17 +5,10 @@
 	&__content{		
 		padding-top: 60px;
 		padding-bottom: 80px;
-
-		// &-slick{
-		// 	margin: 0 auto;
-		// 	max-width: 700px;
-		// }
 	}
 }
 
-
 .slick {
-
 	&__item {
 		position: relative;
 		padding: 0 90px;
@@ -30,7 +23,6 @@
 
 			font-family: $font-lato; 
 			font-size: 20px;
-			font-weight: 400;
 			margin: 110px 0 0 0; 
 			& > p {
 				text-align: center;
@@ -69,7 +61,6 @@
 	&-next{
 		right: 0;
 	}
-
 }
 
 a{
@@ -79,8 +70,8 @@ a{
 .recipient{
 
 	&-info{
-		display: inline-block;
-		margin: 0 0 0 15px; 
+		display: block;
+		margin: 0 0 0 95px; 
 
 		& p a{
 			display: block;				
@@ -106,7 +97,7 @@ a{
 	}
 
 	&1-img{
-		background-image: url("/img/usirpic.png");
+		background-image: url("/dist/img/usirpic.png");
 	}
 
 
@@ -179,11 +170,11 @@ a{
 			&> i {
 				display: block;
 				float: left;
-				margin: 15px 0 15px 25px; 
+				margin: 13px 0 13px 25px; 
 			}
 			& > span {
 				display: block;
-				margin: 15px 60px 15px 0;
+				margin: 11px 30px 11px 0;
 			}
 
 		}
@@ -195,12 +186,13 @@ a{
 		&-info{
 			margin-top: 18px;
 			font-size: 14px;
+			text-align: center;
 			color: $small-text-color;
 		}
 	}
 }
 
-@media screen and (max-width: 993px){
+@include adaptWhenWidthIs($width993){
 	.slick {
 		&__item {
 			padding: 0 40px;
@@ -211,7 +203,19 @@ a{
 	}
 }
 
-@media screen and (max-width: 650px){
+@include adaptWhenWidthIs($width650){
+	slick {
+
+		&__item {
+
+			&-message {
+				margin: 160px 0 0 0; 
+			}
+		}
+	}
+}
+
+@include adaptWhenWidthIs($width400){
 	slick {
 
 		&__item {

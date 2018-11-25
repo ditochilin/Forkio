@@ -88,7 +88,7 @@
 			background-size: 100%;
 			height: 42px;
 			width: 45px;		
-			background-image: url('../../img/Logo.svg');
+			background-image: url('/dist/img/Logo.svg');
 				
 		}
 
@@ -101,7 +101,7 @@
 		}
 
 		& > a:hover > &-logo {
-			background-image: url('../../img/logo-black.png');
+			background-image: url('/dist/img/logo-black.png');
 		}
 
 		& > a:hover > &-name1 {
@@ -205,7 +205,7 @@
 	display: block ;
 }
 
-@media screen and (max-width: 993px){
+@include adaptWhenWidthIs($width993){
 	.footergrid{
 		&__header{		
 			padding: 0 20px;	 
@@ -249,7 +249,7 @@
 	}
 }
 
-@media screen and (max-width: 600px){
+@include adaptWhenWidthIs($width605){
 	.footergrid{
 		&__header{		
 			grid-template-columns: 1fr 1fr;
@@ -261,7 +261,7 @@
 	}
 }
 
-@media screen and (max-width: 480px){
+@include adaptWhenWidthIs($width480){
 	.footergrid{
 
 		&__header{		
@@ -318,7 +318,7 @@
 
 }
 
-@media screen and (max-width: 400px){
+@include adaptWhenWidthIs($width400){
 	.footergrid{
 
 		&__header{		

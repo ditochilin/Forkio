@@ -3,7 +3,7 @@
 .about-us{
 
 	text-align: center;
-	background: url('../../img/bg-img-header.png') center no-repeat #000;
+	background: url('/dist/img/bg-img-header.png') center no-repeat #000;
 	padding-bottom: 453px;	
 	position: relative;
 
@@ -49,7 +49,7 @@
 	}
 }
 
-@media screen and ( max-width: 480px){
+@include adaptWhenWidthIs($width480)	{	
 	.about-us{
 		&__title{
 			font-size: 48px;

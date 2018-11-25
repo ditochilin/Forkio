@@ -43,7 +43,7 @@
   height: 90px;
   margin: auto; }
 
-@media screen and (max-width: 993px) {
+@media (max-width: 992px) {
   .here .wrapper {
     grid-template-columns: 1fr;
     grid-template-areas: 'title'		 'topics' 'topics' 'topics' 'image'; }
@@ -53,7 +53,7 @@
   .topics {
     margin-top: 20px; } }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 479px) {
   .topics__topic {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -61,6 +61,6 @@
     .topics__topic-item {
       margin-top: 20px; } }
 
-@media screen and (max-width: 400px) {
+@media (max-width: 399px) {
   .here .wrapper__title {
     font-size: 32px; } }

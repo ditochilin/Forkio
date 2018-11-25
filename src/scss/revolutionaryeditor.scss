@@ -33,7 +33,6 @@
 	&__slogan{
 		margin: 35px 0;
 		font-family: $font-lato;
-		font-weight: 400;
 		font-size: 21px;
 		color: $text-color-grey;
 	}
@@ -72,7 +71,7 @@
 	font-size: 12px;
 }
 
-@media screen and(max-width: 993px){
+@include adaptWhenWidthIs($width993){
 	.revolutionary-editor{
 		&__title{
 			font-size: 42px;
@@ -80,7 +79,7 @@
 	}	
 }
 
-@media screen and(max-width: 480px){
+@include adaptWhenWidthIs($width480){
 	.revolutionary-editor{
 		&__title{
 			font-size: 26px;

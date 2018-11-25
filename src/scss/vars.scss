@@ -7,3 +7,18 @@ $text-color-grey: #323232;
 $font-montserrat: Montserrat, sans-serif;
 $font-lato: 'Lato', sans-serif;
 
+
+//$width320: 320px;
+$width400: 400px;
+$width480: 480px;
+$width605: 605px;
+$width650: 650px;
+$width768: 768px;
+$width993: 993px;
+$width1160: 1160px;
+
+@mixin adaptWhenWidthIs($currentWidth) {
+  @media (max-width: #{$currentWidth - 1px}) {
+    @content;
+  }
+}

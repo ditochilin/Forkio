@@ -14,7 +14,6 @@
   .slick__item-message {
     font-family: "Lato", sans-serif;
     font-size: 20px;
-    font-weight: 400;
     margin: 110px 0 0 0; }
     .slick__item-message > p {
       text-align: center;
@@ -48,8 +47,8 @@ a {
   text-decoration: none; }
 
 .recipient-info {
-  display: inline-block;
-  margin: 0 0 0 15px; }
+  display: block;
+  margin: 0 0 0 95px; }
   .recipient-info p a {
     display: block; }
 
@@ -69,7 +68,7 @@ a {
   background-position: center; }
 
 .recipient1-img {
-  background-image: url("/img/usirpic.png"); }
+  background-image: url("/dist/img/usirpic.png"); }
 
 .recipient-title {
   margin: 0 0 10px 0;
@@ -126,23 +125,28 @@ a {
       .media__block-btn > i {
         display: block;
         float: left;
-        margin: 15px 0 15px 25px; }
+        margin: 13px 0 13px 25px; }
       .media__block-btn > span {
         display: block;
-        margin: 15px 60px 15px 0; }
+        margin: 11px 30px 11px 0; }
     .media__block-btn:hover {
       cursor: pointer; }
     .media__block-info {
       margin-top: 18px;
       font-size: 14px;
+      text-align: center;
       color: #848e97; }
 
-@media screen and (max-width: 993px) {
+@media (max-width: 992px) {
   .slick__item {
     padding: 0 40px; }
   .media {
     margin-top: 0; } }
 
-@media screen and (max-width: 650px) {
+@media (max-width: 649px) {
+  slick__item-message {
+    margin: 160px 0 0 0; } }
+
+@media (max-width: 399px) {
   slick__item-message {
     margin: 160px 0 0 0; } }

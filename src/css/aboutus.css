@@ -1,6 +1,6 @@
 .about-us {
   text-align: center;
-  background: url("../../img/bg-img-header.png") center no-repeat #000;
+  background: url("/dist/img/bg-img-header.png") center no-repeat #000;
   padding-bottom: 453px;
   position: relative; }
   .about-us .container {
@@ -36,7 +36,7 @@
     padding-top: 13px;
     color: #848e97; }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 479px) {
   .about-us__title {
     font-size: 48px; }
   .about-us__slogan {
