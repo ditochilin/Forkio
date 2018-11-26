@@ -23,7 +23,8 @@
   .topics__topic {
     display: -webkit-box;
     display: flex;
-    color: #323232; }
+    color: #323232;
+    margin: 20px 0; }
     .topics__topic-title {
       margin: 0 0 10px 0;
       font-size: 16px;

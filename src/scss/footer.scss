@@ -33,12 +33,16 @@
 			background-color: #fff;
 			margin: 45px 10px; 
 			padding-left: 25px;
+			&:placeholder {
+				font-size: 14px;
+				color: #c8cbcf;
+			}
+			&:focus{
+				outline: none;
+			}	
 		}
 
-		&>input::placeholder {
-			font-size: 14px;
-			color: #c8cbcf;
-		}	
+		
 
 		&-username {
 			grid-area: username;
@@ -108,13 +112,17 @@
 			color: $primary-color;
 		}
 
+		& > a:hover > &-name2 {
+			color: #000;			
+		}
+
 		&-name1{
 			color: #000;			
 			padding-left: 14px;
 		}
 
 		&-name2{
-			color: #000;			
+			color: $primary-color;			
 			margin-left: -4px;
 		}
 
@@ -327,6 +335,15 @@
 
 			& > input {
 				margin: 10px 0 10px 0;
+			}
+		}
+
+		&__forkio {
+			&-logo{
+				display: none;
+			}
+			&-name1{
+				padding-left: 0;
 			}
 		}
 	}		

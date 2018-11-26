@@ -17,8 +17,6 @@
     height: 100px;
     display: block;
     position: relative; }
-    .header__flex-wrapper ul > li > a:hover {
-      color: white; }
     .header__flex-wrapper > a:hover > h2 {
       color: white; }
     .header__flex-wrapper > a:hover > .logo__logo-img {
@@ -99,6 +97,8 @@
     font-size: 16px;
     color: #8d81ac;
     padding: 0 24px; }
+    .menu__link:hover {
+      color: white; }
 
 .logo {
   display: block;
