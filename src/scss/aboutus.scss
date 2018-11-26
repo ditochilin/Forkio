@@ -3,33 +3,33 @@
 .about-us{
 
 	text-align: center;
-	
+	background: url('/dist/img/bg-img-header.png') center no-repeat #000;
+	padding-bottom: 453px;	
+	position: relative;
 
 	.container{
 		display: flex;
 		justify-content: center;
-		background: url('../../img/bg-img-header.png') no-repeat center;
-		font-family: Montserrat;
 	}
 
 	&__title{
 		font-size: 76px;
 		font-weight: bold;
 		color: #fff;
-		padding: 30px 0 0 0;
+		margin: 30px 0 0 0;
 	}
 
 	&__slogan{
 		color: $primary-color;
-		font-family: 'Lato', sans-serif;
+		font-family: $font-lato;
 		font-size: 30px;
-		padding: 18px 0 0 0;
+		margin: 18px 0 0 0;
 	}
 
 	&__small{
 		&-info{
 			text-transform: uppercase;
-			padding: 18px 0 453px 0;
+			margin: 18px 0 0 0;
 			color: $small-text-color;
 			font-size: 16px;
 		}
@@ -39,15 +39,17 @@
 
 .b-download-btn{
 	color: $small-text-color;
-	padding-top: 50px;
-	margin-bottom: -60px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 75%);
 	&__info{
 		padding-top: 13px;
 		color: #848e97;
 	}
 }
 
-@media screen and ( max-width: 480px){
+@include adaptWhenWidthIs($width480)	{	
 	.about-us{
 		&__title{
 			font-size: 48px;

@@ -1,1 +1,1 @@
-$(document).ready(function(){$(".slick").slick()});
+$(document).ready(function(){$(".header__burger-icon").click(function(){$(".menu").hasClass("visible")&&($(".menu").removeClass("visible"),$(this).removeClass("active"))}),$(".header__burger-icon").mouseenter(function(){$(".menu").addClass("visible"),$(this).addClass("active")})}),$(document).ready(function(){$(".slick").slick()});

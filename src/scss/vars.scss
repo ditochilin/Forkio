@@ -2,5 +2,97 @@ $primary-bg-color: #27262a;
 $primary-color: #8d81ac;
 $small-text-color: #848e97;
 $text-color-header: #635c73;
-
 $text-color-grey: #323232;
+
+$font-montserrat: Montserrat, sans-serif;
+$font-lato: 'Lato', sans-serif;
+
+
+//$width320: 320px;
+$width400: 400px;
+$width480: 480px;
+$width605: 605px;
+$width650: 650px;
+$width768: 768px;
+$width993: 993px;
+$width1160: 1160px;
+
+@mixin adaptWhenWidthIs($currentWidth) {
+  @media (max-width: #{$currentWidth - 1px}) {
+    @content;
+  }
+}
+
+
+@mixin pricing-item($maxWidth: 260px,
+					$height: 460px,
+					$background: rgba(255,255,255,.1),
+					$title-fontsize: 24px,
+					$price-fontsize: 60px,
+					$purchase-fontsize: 15px,
+					$purchase-bg: rgba(255,255,255,.3)) {
+	  @content;	
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      max-width: $maxWidth;
+      height: $height;
+      background: $background; 
+      position: relative; 
+
+      &-title {
+       background: $background;
+       line-height: 100px;
+       font-size: $title-fontsize;
+       font-weight: 200;
+       text-transform: uppercase;
+       width: 100%;
+     }
+     &-price{
+       padding-top: 0.5em;
+       font-size: $price-fontsize;
+       font-weight: 700;
+     }
+     &-period{
+       padding:  1em 0 30px 0;
+       font-size: 14px;
+       color: #968a98;
+       text-transform: uppercase;
+     }
+     &-line{
+       display: block;
+       width: 60px;
+       height: 6px;
+       border: 0;
+       border-top: 6px solid #8d81ac;
+       padding: 0;
+     }
+     &-desc{
+       padding: 0 15px;
+       font-size: 16px;
+       font-weight: 200;  
+       line-height: 1.5;
+     }
+     &-purchase{
+       font-size: $purchase-fontsize;
+       text-transform: uppercase;
+       bottom: 40px; 
+       position: absolute;
+
+       border: none;
+       width: 161px;
+       line-height: 44px;
+       color: #fff;
+       border-radius: 22px; 
+       background: $purchase-bg;
+
+       &:hover{
+        color: #4a3b4e;
+        font-weight: 300;
+        background: rgba(255,255,255,.7);
+        cursor: pointer;
+      }
+    }
+  //}
+}  

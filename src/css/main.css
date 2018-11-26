@@ -1,16 +1,15 @@
-* {
-  margin: 0;
-  padding: 0; }
-
 .main-container {
-  max-width: 1200px;
-  min-width: 320px;
+  min-width: 320px; }
+
+.container {
   margin: 0 auto;
-  padding: 0 -10px; }
+  max-width: 1200px;
+  padding: 0 10px;
+  font-family: Montserrat, sans-serif; }
 
 .btn {
   display: block;
-  font-family: Montserrat;
+  align-self: center;
   text-decoration: none;
   color: #fff;
   font-weight: bold; }
@@ -29,11 +28,3 @@
 @media screen and (max-width: 480px) {
   .btn_download {
     width: 290px; } }
-
-.header__btn {
-  width: 145px;
-  padding: 10px;
-  flex-shrink: 0;
-  border-radius: 19px;
-  -webkit-box-ordinal-group: 3;
-  order: 2; }

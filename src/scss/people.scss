@@ -1,14 +1,12 @@
+@import 'vars.scss';
+
 .people{
 
-	padding: 0 10px;
-	background: url("/img/People/bgPeople.png") no-repeat top #4a3b4e;
-	
-	
+	background: url("/dist/img/People/bgPeople.png") no-repeat top #4a3b4e;
+		
 	&__content{
-		//display: block;
 		padding-top: 97px;
 		color: #fff;
-		font-family: Montserrat;	
 		text-align: center;
 
 		&-title {
@@ -23,7 +21,7 @@
 		&-footer{
 			padding: 30px 30px;
 			color: #a291a5;
-			font-family:  'Lato', sans-serif; 
+			font-family:  $font-lato; 
 			font-size: 14px;
 			max-width: 850px;
 			margin: 0 auto;
@@ -39,10 +37,7 @@
 			padding: 0;
 		}
 	}
-
-
 }
-
 
 .grid{
 	display: grid;
@@ -68,7 +63,7 @@
 		}
 		&-message{
 			
-			font-family:  'Lato', sans-serif; 
+			font-family: $font-lato; 
 			font-size: 16px;
 			font-style: italic;			
 		}
@@ -79,7 +74,7 @@
 	vertical-align: middle;
 }
 
-@media screen and (max-width: 993px){
+@include adaptWhenWidthIs($width993){
 	.grid{
 		grid-template-columns: 1fr 1fr;
   		grid-template-rows: 1fr 1fr 1fr;
@@ -87,17 +82,15 @@
 	}
 }
 
-@media screen and (max-width: 768px){
+@include adaptWhenWidthIs($width768){
 	.grid{
  		grid-column-gap: 50px;
 	}
 }
 
 
-@media screen and (max-width: 481px){
-
+@include adaptWhenWidthIs($width480){
 	.people{
-
 		&__content{
 			&-grid{
 				margin-bottom: 71px; 
@@ -107,7 +100,5 @@
 
 	.grid{
 		grid-template-columns: 1fr;
-  		//grid-template-rows: 1fr 1fr 1fr;
-
 	}
 }

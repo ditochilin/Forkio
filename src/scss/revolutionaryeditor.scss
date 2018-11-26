@@ -1,8 +1,6 @@
 @import 'vars.scss';
 
 .revolutionary-editor{
-	font-family: Montserrat;
-	padding: 0 10px;	
 
 	&__container{
 		margin-top: 50px; 
@@ -28,14 +26,13 @@
 	&__title{
 		text-transform: uppercase;
 		font-weight: 600;
-		font-size: 54px;
+		font-size: 56px;
 		color: #635c73;
 	}
 
 	&__slogan{
 		margin: 35px 0;
-		font-family: 'Lato', sans-serif;
-		font-weight: 400;
+		font-family: $font-lato;
 		font-size: 21px;
 		color: $text-color-grey;
 	}
@@ -59,7 +56,7 @@
 		border-left: none; 
 		text-align: center;
 		width: 60px;
-		height: 20px;
+		height: 17px;
 		font-weight: 700;
 		font-size: 12px;
 	}
@@ -74,7 +71,15 @@
 	font-size: 12px;
 }
 
-@media screen and(max-width: 480px){
+@include adaptWhenWidthIs($width993){
+	.revolutionary-editor{
+		&__title{
+			font-size: 42px;
+		}
+	}	
+}
+
+@include adaptWhenWidthIs($width480){
 	.revolutionary-editor{
 		&__title{
 			font-size: 26px;
@@ -85,14 +90,15 @@
 		}
 
 		&-info{
-			width: 40px;
+			width: 45px;
 		}
-			&-btn{	
-		color: #24292e;
-		float: left;
-		font-size: 11px;
-		list-style-type: none;
-		padding: 0 5px 0 5px;
+
+		&-btn{	
+			color: #24292e;
+			float: left;
+			font-size: 11px;
+			list-style-type: none;
+			padding: 0 5px 0 5px;
 		}
 	}
 }

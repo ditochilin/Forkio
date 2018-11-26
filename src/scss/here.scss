@@ -1,53 +1,49 @@
 @import 'vars.scss';
 
 .here{
-	padding: 0 10px;
-	background-color: #f4f4f4;
+	background-color: #eeeeef;
 
 	&-content{
 		padding-top: 20px;
 		position: relative;
-		font-family: Montserrat;
 	}
 
 	.wrapper{
-		display: flex;
-		flex-wrap: nowrap;
-		flex-basis: 60%;
+		margin-top: 30px;
+		display: grid;
+		grid-template-columns: 2fr 3fr;		
+		grid-template-areas:
+				'topics title'		
+				'topics image'
+				'topics image'
+				'topics image'
+				 ;
 				
 		&__title{
-			display: block;
-			position: absolute;
-			right: 120px;
-			margin-left: 25px;
+			grid-area: title;
+			margin: 0;
 			font-size: 48px;
 			color: $primary-color;
 			font-weight: 700;
 		}
 
-		&__img{	
-			margin-top: 50px; 
-			background-repeat: no-repeat;
-			background-image: url("/img/editor_.png");
-			min-width: 715px; 
-			max-width: 975px;
-			height: 520px;
-		}	
+		&__right {
+			grid-area: image;
+			overflow: hidden;;
+		}
 	}
 }
 
 
 .topics{
-	display: flex;
-	flex-wrap: wrap;
-		
-	&__topic{
-		margin-top: 20px;
-		display: flex;
-		
+	grid-area: topics;
+
+	&__topic{		
+		display: flex;		
 		color: $text-color-grey;
+		margin: 20px 0;
 		&-title{	
-			font-weight: 400;		
+			margin: 0 0 10px 0;			
 			font-size: 16px;
 			color: $text-color-grey;	
 		}	
@@ -55,69 +51,51 @@
 			font-size: 14px;	
 			color: $small-text-color;
 		}		
-		&-img > div{
+
+		&-img {
 			display: block;
-			min-width: 111px;
-			min-height: 90px;
-			background-repeat: no-repeat;
-			background-size: contain;								
-			background-position: center;		
+			min-width: 130px;
 		}
+
 		&-item{
-			margin-left: 10px;
+			margin: 0 30px;
 		}				
 	}
 }
 
-.topic1-img{
-	background-image: url("/img/topic1.png");
+.topic__img{
+	display: block;
+	width: auto;
+	height: 90px;
+    margin: auto; 
 }
 
-.topic2-img{
-	background-image: url("/img/topic2.png");
-}
-
-.topic3-img{
-	background-image: url("/img/topic3.png");
-}
-
-.topic4-img{
-	background-image: url("/img/topic4.png");
-}
-
-@media screen and(max-width: 993px){
+@include adaptWhenWidthIs($width993){
 	.here{
 		.wrapper{
-			flex-wrap: wrap;
+			grid-template-columns: 1fr;
+			grid-template-areas:
+				'title'		
+				'topics'
+				'topics'
+				'topics'
+				'image'
+				 ;
 
 			&__title{
-				position: static;
-				right: 0;
-				margin-left: 0;
-				display: flex;
-				justify-content: center;
 				font-size: 42px;
 				text-align: center;
 			}
 
 		}
 	}
-}
 
-@media screen and (max-width: 768px){
-	.here{
-		.wrapper{
-
-			&__img{	
-				//min-height: 381px;
-				//min-width: 515px; 
-
-			}	
-		}
+	.topics {
+		margin-top: 20px;
 	}
 }
 
-@media screen and (max-width: 480px){
+@include adaptWhenWidthIs($width480){	
 	.topics{		
 		&__topic{
 			flex-direction: column;
@@ -128,7 +106,7 @@
 	}	
 }
 
-@media screen and (max-width: 400px){
+@include adaptWhenWidthIs($width400){
 	.here{
 		.wrapper{
 			&__title{

@@ -2,10 +2,7 @@
 @import 'vars.scss';
 
 .footer {
-
-	&__content {
-		font-family: Montserrat;
-	}
+	background-color: #f4f4f4;
 }
 
 .footergrid {
@@ -16,7 +13,6 @@
     		"title username phone callme";	
 
 		padding: 0 90px;
-		background-color: #f4f4f4;
 		
 		& > * {
 			align-self: center;
@@ -30,19 +26,23 @@
 		}
 
 		&>input {
-			max-width: 336px;
+			min-width: 150px;
 			height: 44px;
 			border-radius: 22px;
 			border: none;
 			background-color: #fff;
 			margin: 45px 10px; 
 			padding-left: 25px;
+			&:placeholder {
+				font-size: 14px;
+				color: #c8cbcf;
+			}
+			&:focus{
+				outline: none;
+			}	
 		}
 
-		&>input::placeholder {
-			font-size: 14px;
-			color: #c8cbcf;
-		}	
+		
 
 		&-username {
 			grid-area: username;
@@ -74,11 +74,12 @@
 	}
 
 	&__white-container{
+		background-color: #fff;
 		display: grid;
 		grid-template-areas: 
     		"forkio nav contacts info";
 
-		padding: 60px 35px;
+		padding: 60px 25px;
 	}
 
 	&__forkio {
@@ -91,7 +92,7 @@
 			background-size: 100%;
 			height: 42px;
 			width: 45px;		
-			background-image: url('../../img/Logo.svg');
+			background-image: url('/dist/img/Logo.svg');
 				
 		}
 
@@ -104,20 +105,24 @@
 		}
 
 		& > a:hover > &-logo {
-			background-image: url('../../img/logo-black.png');
+			background-image: url('/dist/img/logo-black.png');
 		}
 
 		& > a:hover > &-name1 {
 			color: $primary-color;
 		}
 
+		& > a:hover > &-name2 {
+			color: #000;			
+		}
+
 		&-name1{
 			color: #000;			
-			padding-left: 17px;
+			padding-left: 14px;
 		}
 
 		&-name2{
-			color: #000;			
+			color: $primary-color;			
 			margin-left: -4px;
 		}
 
@@ -208,10 +213,10 @@
 	display: block ;
 }
 
-@media screen and (max-width: 993px){
+@include adaptWhenWidthIs($width993){
 	.footergrid{
 		&__header{		
-			padding: 0 30px;	
+			padding: 0 20px;	 
 			grid-template-areas: 
 			"title title"
 			"username phone"
@@ -245,13 +250,18 @@
 		&__contacts {
 			margin-left: 0px;
 		}
+
+		&__nav, &__info {
+			margin-left: 35px;
+		}
 	}
 }
 
-@media screen and (max-width: 600px){
+@include adaptWhenWidthIs($width605){
 	.footergrid{
 		&__header{		
-	
+			grid-template-columns: 1fr 1fr;
+
 			& > input {
 				margin: 28px 5px 25px 5px;
 			}
@@ -259,16 +269,18 @@
 	}
 }
 
-@media screen and (max-width: 480px){
+@include adaptWhenWidthIs($width480){
 	.footergrid{
 
 		&__header{		
+			grid-template-columns: 1fr; 
 			grid-template-areas: 
 			"title"
 			"username"
 			"phone"
 			"callme";	
-			
+
+
 			&-title{
 				font-size: 28px;
 				text-align: center;	
@@ -280,7 +292,7 @@
 			}
 
 			&-callme{
-				margin-top: 20px;
+				margin-top: 13px;
 			}
 		}
 
@@ -314,7 +326,7 @@
 
 }
 
-@media screen and (max-width: 400px){
+@include adaptWhenWidthIs($width400){
 	.footergrid{
 
 		&__header{		
@@ -323,6 +335,15 @@
 
 			& > input {
 				margin: 10px 0 10px 0;
+			}
+		}
+
+		&__forkio {
+			&-logo{
+				display: none;
+			}
+			&-name1{
+				padding-left: 0;
 			}
 		}
 	}		
